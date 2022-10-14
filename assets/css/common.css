@@ -1,0 +1,55 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    transition: all 0.9s ease-in-out !important;
+}
+
+.login img {
+    width: 200px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+.form-control {
+    border: none !important;
+    outline: none !important;
+}
+
+button {
+    border: none !important;
+    outline: none !important;
+}
+
+.form-control:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+input {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+h1 {
+    font-size: 2.625rem;
+}
+
+p {
+    font-size: 0.938rem;
+}
+
+a {
+    font-size: 0.938rem;
+    text-decoration: none;
+}
