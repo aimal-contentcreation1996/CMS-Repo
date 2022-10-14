@@ -1,0 +1,25 @@
+@media only screen and (max-width: 767.5px) {
+    .black-log .login .box {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500.5px) {
+    .black-log {
+        align-items: unset;
+        height: auto;
+    }
+    .black-log .login .box form .social-btn {
+        flex-direction: column;
+    }
+    .black-log .login .box form .social-btn a {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .black-log .login .box {
+        padding: 30px 15px;
+    }
+}
