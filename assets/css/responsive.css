@@ -6,7 +6,7 @@
 
 @media only screen and (max-width: 500.5px) {
     .black-log {
-        align-items: unset;
+        align-items: center;
         height: auto;
     }
     .black-log .login .box form .social-btn {
