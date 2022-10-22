@@ -14,6 +14,10 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+.modal::-webkit-scrollbar {
+    display: none;
+}
+
 input {
     border: none;
     outline: none;
@@ -72,17 +76,88 @@ input[type=number] {
 
 .float {
     position: fixed;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     bottom: 40px;
-    right: 1px;
+    right: 5px;
     background-color: #0C9;
     color: #FFF;
     border-radius: 50px;
     text-align: center;
     box-shadow: 2px 2px 3px #999;
+    z-index: 9999999999;
 }
 
 .my-float {
-    margin-top: 19px;
+    margin-top: 24px;
+    margin-left: 5px;
+    font-size: 1.5rem;
+}
+
+.suptop {
+    width: 25px;
+    display: inline-block;
+    height: 25px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    padding-top: 13px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 0;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+    width: 20px;
+    height: 15px;
+}
+
+.form-check-label {
+    font-size: 0.938rem;
+}
+
+.modal {
+    opacity: 1 !important;
+}
+
+input[type=radio] {
+    accent-color: #02A574;
+}
+
+input[type=checkbox] {
+    accent-color: #02A574;
 }
