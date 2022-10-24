@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--! bootstrap 4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+    <!--! font awsm -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/fontawesome.min.js" integrity="sha512-j3gF1rYV2kvAKJ0Jo5CdgLgSYS7QYmBVVUjduXdoeBkc4NFV4aSRTi+Rodkiy9ht7ZYEwF+s09S43Z1Y+ujUkA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- !======Swiper js======= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.css" integrity="sha512-5TGRCl3hPoqtruhO+mubTuySHOfcEBvyIfiWHoCK8wDLmf6C1U73OUoNCU6ZvyT/8vfCcha1INDIo8dabDmQjw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.min.js" integrity="sha512-naEQG74IcOLQ6K/B1PmhIcZ4i3YE2FXs2zm603E1Q3shbron+PmYLg44/q+xAymD/RvskZ2H8l1Qa7I5qELlrg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--! Css -->
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <title>3.1 Application - 1</title>
+
+</head>
+<style>
+
+</style>
+
+<body>
+    <section class="main">
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <div class="col-lg-3">
+                    <div class="left-side">
+                        <div class="logo-sec">
+                            <img src="./assets/img/logo.svg" width="200px" alt="">
+                        </div>
+                        <div class="dropbox" style="background-image: url('./assets/img/3.1-1.png');">
+                            <h6 class="text-center">Select Campus</h6>
+                            <a href="#!" id="ClickToggle">
+                                <h4 class="text-center">CYBERJAYA <i class="fas fa-angle-down rotate"></i></h4>
+                            </a>
+                            <ul class="campuses campus-menu">
+                                <li class="">
+                                    <a class="d-flex flex-row justify-content-between" href="2.1-Application-1.html" target="_blank">All Campus
+                                        <span class="green-col">4</span>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a class="d-flex flex-row justify-content-between" href="#!">Cyberjaya, Malaysia
+                                        <span class="green-col">3</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="d-flex flex-row justify-content-between" href="#!">Kuching, Malaysia
+                                        <span class="green-col"></span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a class="d-flex flex-row justify-content-between" href="2.1-Application-3.html" target="_blank">Uganda
+                                        <span class="green-col">0</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="d-flex flex-row justify-content-between" href="#!">Namibia
+                                        <span class="green-col"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="d-flex flex-row justify-content-between" href="#!">Gaborone, Botswana
+                                        <span class="green-col"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="d-flex flex-row justify-content-between" href="#!">Maseru, Lesotho
+                                        <span class="green-col">1</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="d-flex flex-row justify-content-between" href="#!">Mbabane, eSwatini
+                                        <span class="green-col"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="d-flex flex-row justify-content-between" href="#!">Phnom Penh, Cambodia
+                                        <span class="green-col"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="d-flex flex-row justify-content-between" href="#!">Freetown, Sierra Leone
+                                        <span class="green-col"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="green-btn-holder campus-menu-btn">
+                                <a href="2.1-Application-2.html" class="green">Create New Application</a>
+                            </div>
+
+                        </div>
+                        <div class="type-btn-holder">
+                            <ul>
+                                <li class="active">
+                                    <a href="#!"><i class="fa-solid fa-pen"></i> My Application</a>
+                                </li>
+                                <li>
+                                    <a href="#!"><i class="fa-solid fa-file"></i> My Documents</a>
+                                </li>
+                                <li>
+                                    <a href="index.html" target="_blank"><i class="fa-solid fa-right-from-bracket"></i>
+                                        Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="right-side">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="upper-section">
+                                    <div>
+                                        <img src="./assets/img/profile.svg" width="115px" alt="">
+                                    </div>
+                                    <div class="heading-sec ">
+                                        <h6>Welcome back</h6>
+                                        <h3>Benjamin Hill</h3>
+                                        <h5>0000000</h5>
+                                    </div>
+                                    <div class="heading-sec ">
+                                        <h6>Applied Campus</h6>
+                                        <h3>Cyberjaya</h3>
+                                        <h5>Malaysia</h5>
+                                    </div>
+                                    <div class="heading-sec ">
+                                        <h6>Current Stage</h6>
+                                        <h3>Stage 1</h3>
+                                        <h5>Document Preparation</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="sect-scnd-hero">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="msg-hero">
+                                                <img class="msg-img" src="./assets/img/msg.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="row">
+                                        <div class="col-12 text-left docmt-header">My Documents</div>
+                                    </div>
+                                    <div class="row pt-4 mt-2 frm-hero d-flex align-items-center">
+                                        <div class="col-lg-10 col-md-8 col-sm-12">
+                                            <input class="form-control" type="text" placeholder="Search for documents…">
+                                            <img class="srch-img" src="./assets/img/src.png" alt="">
+                                        </div>
+                                        <div class="col-2">
+                                            <a href="" class="text-decoration-none mb-0 srch-btn1">Search</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- data row 1 (tabs)-->
+                                    <div class="row data1">
+                                        <div class="col-12">
+                                            <div class="d-flex justify-content-end gap-3">
+                                                <div class="tablinks" onclick="openCity(event, 'London')">
+                                                    <img class="line-img" src="./assets/img/lines.png" alt="">
+                                                </div>
+
+                                                <div class="tablinks active" onclick="openCity(event, 'Paris')">
+                                                    <img class="line-img" src="./assets/img/dots.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- stage row 1 (tab 1) -->
+
+                                    <div id="London" class="tabcontent" style="display: none;">
+                                        <!-- / 2 -->
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="cyberjaya-hero">
+                                                    <div class="d-flex align-items-center">
+                                                        <h3 class="cyber-header mb-0">
+                                                            Application 1 - Cyberjaya
+                                                        </h3>
+                                                        <a href="" class="text-decoration-none text-center py-1 stage-btn mb-0">Stage 1</a>
+                                                    </div>
+                                                    <p class="ba-para pt-3">
+                                                        BA (Hons) of Creative Imaging in Digital Photography
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-end align-items-baseline">
+                                                <div class="d-flex align-items-center download-hero">
+                                                    <h4 class="d-all-head mb-0">Download All</h4>
+                                                    <img class="arr-img" src="./assets/img/arr.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 3 -->
+                                        <div class="row">
+                                            <div class="col-lg-3 col-md-3 col-sm-4">
+                                                <div class="d-flex align-items-center pdf-hero gap-3">
+                                                    <img class="pdf-img" src="./assets/img/pdf.png" alt="pdf">
+                                                    <p class="pdf-para mb-0">Passport photo.pdf</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-4">
+                                                <div class="d-flex align-items-center pdf-hero gap-3">
+                                                    <img class="pdf-img" src="./assets/img/pdf.png" alt="pdf">
+                                                    <p class="pdf-para mb-0">Passport photo.pdf</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-4">
+                                                <div class="d-flex align-items-center pdf-hero gap-3">
+                                                    <img class="pdf-img" src="./assets/img/pdf.png" alt="pdf">
+                                                    <p class="pdf-para mb-0">Passport photo.pdf</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-4">
+                                                <div class="d-flex align-items-center pdf-hero gap-3">
+                                                    <img class="pdf-img" src="./assets/img/pdf.png" alt="pdf">
+                                                    <p class="pdf-para mb-0">Passport photo.pdf</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-4">
+                                                <div class="d-flex align-items-center pdf-hero gap-3">
+                                                    <img class="pdf-img" src="./assets/img/pdf.png" alt="pdf">
+                                                    <p class="pdf-para mb-0">Passport photo.pdf</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-4">
+                                                <div class="d-flex align-items-center pdf-hero gap-3">
+                                                    <img class="pdf-img" src="./assets/img/pdf.png" alt="pdf">
+                                                    <p class="pdf-para mb-0">Passport photo.pdf</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-4">
+                                                <div class="d-flex align-items-center pdf-hero gap-3">
+                                                    <img class="pdf-img" src="./assets/img/pdf.png" alt="pdf">
+                                                    <p class="pdf-para mb-0">Passport photo.pdf</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- stage row 2 -->
+                                        <!-- / 2 -->
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="cyberjaya-hero">
+                                                    <div class="d-flex align-items-center">
+                                                        <h3 class="cyber-header mb-0">
+                                                            Application 2 - Cyberjaya
+                                                        </h3>
+                                                        <a href="" class="text-decoration-none text-center py-1 stage-btn mb-0">Stage 2</a>
+                                                    </div>
+                                                    <p class="ba-para pt-3">
+                                                        Bachelor of Arts (Hons) Communication with Psychology
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-end align-items-baseline">
+                                                <div class="d-flex align-items-center download-hero">
+                                                    <h4 class="d-all-head mb-0">Download All</h4>
+                                                    <img class="arr-img" src="./assets/img/arr.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 3 -->
+                                        <div class="row">
+                                            <div class="col-lg-3 col-md-3 col-sm-4">
+                                                <div class="d-flex align-items-center pdf-hero gap-3">
+                                                    <img class="pdf-img" src="./assets/img/pdf.png" alt="pdf">
+                                                    <p class="pdf-para mb-0">Passport photo.pdf</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-4">
+                                                <div class="d-flex align-items-center pdf-hero gap-3">
+                                                    <img class="pdf-img" src="./assets/img/pdf.png" alt="pdf">
+                                                    <p class="pdf-para mb-0">Passport photo.pdf</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-4">
+                                                <div class="d-flex align-items-center pdf-hero gap-3">
+                                                    <img class="pdf-img" src="./assets/img/pdf.png" alt="pdf">
+                                                    <p class="pdf-para mb-0">Passport photo.pdf</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-4">
+                                                <div class="d-flex align-items-center pdf-hero gap-3">
+                                                    <img class="pdf-img" src="./assets/img/pdf.png" alt="pdf">
+                                                    <p class="pdf-para mb-0">Passport photo.pdf</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-4">
+                                                <div class="d-flex align-items-center pdf-hero gap-3">
+                                                    <img class="pdf-img" src="./assets/img/pdf.png" alt="pdf">
+                                                    <p class="pdf-para mb-0">Passport photo.pdf</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-4">
+                                                <div class="d-flex align-items-center pdf-hero gap-3">
+                                                    <img class="pdf-img" src="./assets/img/pdf.png" alt="pdf">
+                                                    <p class="pdf-para mb-0">Passport photo.pdf</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-4">
+                                                <div class="d-flex align-items-center pdf-hero gap-3">
+                                                    <img class="pdf-img" src="./assets/img/pdf.png" alt="pdf">
+                                                    <p class="pdf-para mb-0">Passport photo.pdf</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- stage row 3 -->
+                                        <!-- / 2 -->
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="cyberjaya-hero">
+                                                    <div class="d-flex align-items-center">
+                                                        <h3 class="cyber-header mb-0">
+                                                            Application 3 - Cyberjaya
+                                                        </h3>
+                                                        <a href="" class="text-decoration-none text-center py-1 stage-btn mb-0">Stage 3</a>
+                                                    </div>
+                                                    <p class="ba-para pt-3">
+                                                        Bachelor of Business (Hons) in Human Resource Management
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-end align-items-baseline">
+                                                <div class="d-flex align-items-center download-hero">
+                                                    <h4 class="d-all-head mb-0">Download All</h4>
+                                                    <img class="arr-img" src="./assets/img/arr.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 3 -->
+                                        <div class="row">
+                                            <div class="col-lg-3 col-md-3 col-sm-4">
+                                                <div class="d-flex align-items-center pdf-hero gap-3">
+                                                    <img class="pdf-img" src="./assets/img/pdf.png" alt="pdf">
+                                                    <p class="pdf-para mb-0">Passport photo.pdf</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-4">
+                                                <div class="d-flex align-items-center pdf-hero gap-3">
+                                                    <img class="pdf-img" src="./assets/img/pdf.png" alt="pdf">
+                                                    <p class="pdf-para mb-0">Passport photo.pdf</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-4">
+                                                <div class="d-flex align-items-center pdf-hero gap-3">
+                                                    <img class="pdf-img" src="./assets/img/pdf.png" alt="pdf">
+                                                    <p class="pdf-para mb-0">Passport photo.pdf</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-4">
+                                                <div class="d-flex align-items-center pdf-hero gap-3">
+                                                    <img class="pdf-img" src="./assets/img/pdf.png" alt="pdf">
+                                                    <p class="pdf-para mb-0">Passport photo.pdf</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-4">
+                                                <div class="d-flex align-items-center pdf-hero gap-3">
+                                                    <img class="pdf-img" src="./assets/img/pdf.png" alt="pdf">
+                                                    <p class="pdf-para mb-0">Passport photo.pdf</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-4">
+                                                <div class="d-flex align-items-center pdf-hero gap-3">
+                                                    <img class="pdf-img" src="./assets/img/pdf.png" alt="pdf">
+                                                    <p class="pdf-para mb-0">Passport photo.pdf</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-4">
+                                                <div class="d-flex align-items-center pdf-hero gap-3">
+                                                    <img class="pdf-img" src="./assets/img/pdf.png" alt="pdf">
+                                                    <p class="pdf-para mb-0">Passport photo.pdf</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- stage row 4 -->
+                                        <!-- / 2 -->
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="cyberjaya-hero">
+                                                    <div class="d-flex align-items-center">
+                                                        <h3 class="cyber-header mb-0">
+                                                            Application 4 - Maseru
+                                                        </h3>
+                                                        <a href="" class="text-decoration-none text-center py-1 stage-btn mb-0">Stage 4</a>
+                                                    </div>
+                                                    <p class="ba-para pt-3">
+                                                        Bachelor of Arts (Hons) Communication with Psychology
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-end align-items-baseline">
+                                                <div class="d-flex align-items-center download-hero">
+                                                    <h4 class="d-all-head mb-0">Download All</h4>
+                                                    <img class="arr-img" src="./assets/img/arr.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 3 -->
+                                        <div class="row">
+                                            <div class="col-lg-3 col-md-3 col-sm-4">
+                                                <div class="d-flex align-items-center pdf-hero gap-3">
+                                                    <img class="pdf-img" src="./assets/img/pdf.png" alt="pdf">
+                                                    <p class="pdf-para mb-0">Passport photo.pdf</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-4">
+                                                <div class="d-flex align-items-center pdf-hero gap-3">
+                                                    <img class="pdf-img" src="./assets/img/pdf.png" alt="pdf">
+                                                    <p class="pdf-para mb-0">Passport photo.pdf</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-4">
+                                                <div class="d-flex align-items-center pdf-hero gap-3">
+                                                    <img class="pdf-img" src="./assets/img/pdf.png" alt="pdf">
+                                                    <p class="pdf-para mb-0">Passport photo.pdf</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-4">
+                                                <div class="d-flex align-items-center pdf-hero gap-3">
+                                                    <img class="pdf-img" src="./assets/img/pdf.png" alt="pdf">
+                                                    <p class="pdf-para mb-0">Passport photo.pdf</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-4">
+                                                <div class="d-flex align-items-center pdf-hero gap-3">
+                                                    <img class="pdf-img" src="./assets/img/pdf.png" alt="pdf">
+                                                    <p class="pdf-para mb-0">Passport photo.pdf</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-4">
+                                                <div class="d-flex align-items-center pdf-hero gap-3">
+                                                    <img class="pdf-img" src="./assets/img/pdf.png" alt="pdf">
+                                                    <p class="pdf-para mb-0">Passport photo.pdf</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-4">
+                                                <div class="d-flex align-items-center pdf-hero gap-3">
+                                                    <img class="pdf-img" src="./assets/img/pdf.png" alt="pdf">
+                                                    <p class="pdf-para mb-0">Passport photo.pdf</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <!-- //2nd tab -->
+
+                                    <div id="Paris" class="tabcontent" style="display: block;">
+                                        <!-- stage row 1 -->
+                                        <!-- / 2 -->
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="cyberjaya-hero">
+                                                    <div class="d-flex align-items-center">
+                                                        <h3 class="cyber-header mb-0">
+                                                            Application 1 - Cyberjaya
+                                                        </h3>
+                                                        <a href="" class="text-decoration-none text-center py-1 stage-btn mb-0">Stage 1</a>
+                                                    </div>
+                                                    <p class="ba-para pt-3">
+                                                        BA (Hons) of Creative Imaging in Digital Photography
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-end align-items-baseline">
+                                                <div class="d-flex align-items-center download-hero">
+                                                    <h4 class="d-all-head mb-0">Download All</h4>
+                                                    <img class="arr-img" src="./assets/img/arr.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 3 -->
+                                        <div class="row pt-3">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <div class="d-flex align-items-center docm-hero">
+                                                    <p class="dc-header mb-0">Document Name</p>
+                                                    <div class="d-grid gap-1">
+                                                        <img src="./assets/img/u.png" alt="">
+                                                        <img src="./assets/img/d.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <div class="d-flex align-items-center docm-hero">
+                                                    <p class="dc-header mb-0">Upload Date</p>
+                                                    <div class="d-grid gap-1">
+                                                        <img src="./assets/img/u.png" alt="">
+                                                        <img src="./assets/img/d.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <div class="d-flex align-items-center docm-hero">
+                                                    <p class="dc-header mb-0">Type</p>
+                                                    <div class="d-grid gap-1">
+                                                        <img src="./assets/img/u.png" alt="">
+                                                        <img src="./assets/img/d.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-2 col-3">
+                                                <div class="d-flex align-items-center docm-hero">
+                                                    <p class="dc-header mb-0">Size</p>
+                                                    <div class="d-grid gap-1">
+                                                        <img src="./assets/img/u.png" alt="">
+                                                        <img src="./assets/img/d.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row passport-hero">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">Passport document</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">10th February 2021</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para px-1">PDF</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">300kb</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row passport-hero">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">Passport document</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">10th February 2021</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para px-1">PDF</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">300kb</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row passport-hero">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">Academic transcript</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">10th February 2021</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para px-1">PDF</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">300kb</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row passport-hero">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">Academic transcript</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">10th February 2021</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para px-1">PDF</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">300kb</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row passport-hero">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">English certificate</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">10th February 2021</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para px-1">PDF</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">300kb</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row passport-hero">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">Resume</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">10th February 2021</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para px-1">PDF</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">300kb</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row passport-hero">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">CV</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">10th February 2021</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para px-1">PDF</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">300kb</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- stage row 2 -->
+                                        <!-- / 2 -->
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="cyberjaya-hero">
+                                                    <div class="d-flex align-items-center">
+                                                        <h3 class="cyber-header mb-0">
+                                                            Application 2 - Cyberjaya
+                                                        </h3>
+                                                        <a href="" class="text-decoration-none text-center py-1 stage-btn mb-0">Stage 2</a>
+                                                    </div>
+                                                    <p class="ba-para pt-3">
+                                                        Bachelor of Arts (Hons) Communication with Psychology
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-end align-items-baseline">
+                                                <div class="d-flex align-items-center download-hero">
+                                                    <h4 class="d-all-head mb-0">Download All</h4>
+                                                    <img class="arr-img" src="./assets/img/arr.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 3 -->
+
+                                        <div class="row pt-3">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <div class="d-flex align-items-center docm-hero">
+                                                    <p class="dc-header mb-0">Document Name</p>
+                                                    <div class="d-grid gap-1">
+                                                        <img src="./assets/img/u.png" alt="">
+                                                        <img src="./assets/img/d.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <div class="d-flex align-items-center docm-hero">
+                                                    <p class="dc-header mb-0">Upload Date</p>
+                                                    <div class="d-grid gap-1">
+                                                        <img src="./assets/img/u.png" alt="">
+                                                        <img src="./assets/img/d.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <div class="d-flex align-items-center docm-hero">
+                                                    <p class="dc-header mb-0">Type</p>
+                                                    <div class="d-grid gap-1">
+                                                        <img src="./assets/img/u.png" alt="">
+                                                        <img src="./assets/img/d.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <div class="d-flex align-items-center docm-hero">
+                                                    <p class="dc-header mb-0">Size</p>
+                                                    <div class="d-grid gap-1">
+                                                        <img src="./assets/img/u.png" alt="">
+                                                        <img src="./assets/img/d.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row passport-hero">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">Passport document</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">10th February 2021</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para px-1">PDF</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">300kb</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row passport-hero">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">Passport document</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">10th February 2021</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para px-1">PDF</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">300kb</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row passport-hero">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">Academic transcript</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">10th February 2021</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para px-1">PDF</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">300kb</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row passport-hero">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">Academic transcript</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">10th February 2021</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para px-1">PDF</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">300kb</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row passport-hero">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">English certificate</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">10th February 2021</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para px-1">PDF</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">300kb</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row passport-hero">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">Resume</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">10th February 2021</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para px-1">PDF</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">300kb</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row passport-hero">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">CV</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">10th February 2021</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para px-1">PDF</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">300kb</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- stage row 3 -->
+                                        <!-- / 2 -->
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="cyberjaya-hero">
+                                                    <div class="d-flex align-items-center">
+                                                        <h3 class="cyber-header mb-0">
+                                                            Application 3 - Cyberjaya
+                                                        </h3>
+                                                        <a href="" class="text-decoration-none text-center py-1 stage-btn mb-0">Stage 3</a>
+                                                    </div>
+                                                    <p class="ba-para pt-3">
+                                                        Bachelor of Business (Hons) in Human Resource Management
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-end align-items-baseline">
+                                                <div class="d-flex align-items-center download-hero">
+                                                    <h4 class="d-all-head mb-0">Download All</h4>
+                                                    <img class="arr-img" src="./assets/img/arr.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 3 -->
+                                        <div class="row pt-3">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <div class="d-flex align-items-center docm-hero">
+                                                    <p class="dc-header mb-0">Document Name</p>
+                                                    <div class="d-grid gap-1">
+                                                        <img src="./assets/img/u.png" alt="">
+                                                        <img src="./assets/img/d.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <div class="d-flex align-items-center docm-hero">
+                                                    <p class="dc-header mb-0">Upload Date</p>
+                                                    <div class="d-grid gap-1">
+                                                        <img src="./assets/img/u.png" alt="">
+                                                        <img src="./assets/img/d.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <div class="d-flex align-items-center docm-hero">
+                                                    <p class="dc-header mb-0">Type</p>
+                                                    <div class="d-grid gap-1">
+                                                        <img src="./assets/img/u.png" alt="">
+                                                        <img src="./assets/img/d.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <div class="d-flex align-items-center docm-hero">
+                                                    <p class="dc-header mb-0">Size</p>
+                                                    <div class="d-grid gap-1">
+                                                        <img src="./assets/img/u.png" alt="">
+                                                        <img src="./assets/img/d.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row passport-hero">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">Passport document</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">10th February 2021</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para px-1">PDF</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">300kb</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row passport-hero">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">Passport document</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">10th February 2021</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para px-1">PDF</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">300kb</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row passport-hero">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">Academic transcript</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">10th February 2021</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para px-1">PDF</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">300kb</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row passport-hero">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">Academic transcript</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">10th February 2021</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para px-1">PDF</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">300kb</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row passport-hero">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">English certificate</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">10th February 2021</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para px-1">PDF</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">300kb</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row passport-hero">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">Resume</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">10th February 2021</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para px-1">PDF</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">300kb</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row passport-hero">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">CV</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">10th February 2021</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para px-1">PDF</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">300kb</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row passport-hero">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">Payment slip</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">10th February 2021</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para px-1">PDF</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">300kb</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row passport-hero">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">Offer letter</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">10th February 2021</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para px-1">PDF</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">300kb</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row passport-hero">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">Offer letter</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">10th February 2021</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para px-1">PDF</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">300kb</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- stage row 4 -->
+                                        <!-- / 2 -->
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="cyberjaya-hero">
+                                                    <div class="d-flex align-items-center">
+                                                        <h3 class="cyber-header mb-0">
+                                                            Application 4 - Maseru
+                                                        </h3>
+                                                        <a href="" class="text-decoration-none text-center py-1 stage-btn mb-0">Stage 4</a>
+                                                    </div>
+                                                    <p class="ba-para pt-3">
+                                                        Bachelor of Arts (Hons) Communication with Psychology
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-end align-items-baseline">
+                                                <div class="d-flex align-items-center download-hero">
+                                                    <h4 class="d-all-head mb-0">Download All</h4>
+                                                    <img class="arr-img" src="./assets/img/arr.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 3 -->
+                                        <div class="row pt-3">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <div class="d-flex align-items-center docm-hero">
+                                                    <p class="dc-header mb-0">Document Name</p>
+                                                    <div class="d-grid gap-1">
+                                                        <img src="./assets/img/u.png" alt="">
+                                                        <img src="./assets/img/d.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <div class="d-flex align-items-center docm-hero">
+                                                    <p class="dc-header mb-0">Upload Date</p>
+                                                    <div class="d-grid gap-1">
+                                                        <img src="./assets/img/u.png" alt="">
+                                                        <img src="./assets/img/d.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <div class="d-flex align-items-center docm-hero">
+                                                    <p class="dc-header mb-0">Type</p>
+                                                    <div class="d-grid gap-1">
+                                                        <img src="./assets/img/u.png" alt="">
+                                                        <img src="./assets/img/d.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <div class="d-flex align-items-center docm-hero">
+                                                    <p class="dc-header mb-0">Size</p>
+                                                    <div class="d-grid gap-1">
+                                                        <img src="./assets/img/u.png" alt="">
+                                                        <img src="./assets/img/d.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row passport-hero">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">Passport document</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">10th February 2021</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para px-1">PDF</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">300kb</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row passport-hero">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">Passport document</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">10th February 2021</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para px-1">PDF</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">300kb</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row passport-hero">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">Academic transcript</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">10th February 2021</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para px-1">PDF</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">300kb</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row passport-hero">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">Academic transcript</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">10th February 2021</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para px-1">PDF</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">300kb</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row passport-hero">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">English certificate</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">10th February 2021</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para px-1">PDF</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">300kb</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row passport-hero">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">Resume</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">10th February 2021</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para px-1">PDF</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">300kb</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row passport-hero">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">CV</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">10th February 2021</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para px-1">PDF</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                                <p class="passport-para">300kb</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Floating Button -->
+    <a href="#!" class="float">
+        <!-- <i class="fa fa-plus "></i> -->
+        <i class="fa-solid fa-message my-float"></i>
+        <sup class="suptop">3</sup>
+    </a>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+
+
+
+<!-- Initialize Swiper -->
+<script>
+    $(document).ready(function() {
+        $('.campuses li').click(function() {
+            $('.campuses li').removeClass('active');
+            $(this).addClass('active');
+        });
+        $('.type-btn-holder ul li').click(function() {
+            $('.type-btn-holder ul li').removeClass('active');
+            $(this).addClass('active');
+        });
+        $('#ClickToggle').click(function() {
+            $('.campus-menu').slideToggle('fast').css('display', 'block');
+            $('.green-btn-holder').toggle();
+            $('.rotate').toggleClass('down-angle');
+        })
+    })
+    $('.tabs').on('show.bs.tab', function(e) {
+        if (e.relatedTarget === undefined) {
+            $($(e.target).attr('href')).slideDown('slow');
+        } else {
+            $($(e.relatedTarget).attr('href')).slideUp({
+                duration: 'fast',
+                queue: true,
+                done: function() {
+                    $($(e.target).attr('href')).slideDown('slow');
+                }
+            });
+        }
+    });
+    // ALi Script
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+
+</html>
