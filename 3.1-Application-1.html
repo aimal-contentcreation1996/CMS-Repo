@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./assets/css/common.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
     <title>3.1 Application - 1</title>
 
 </head>
@@ -371,7 +372,7 @@
                                                                 </form>
                                                             </div>
                                                             <div class="tab-pane fade" id="pills-details" role="tabpanel" aria-labelledby="pills-details-tab">
-                                                                <form action="">
+                                                                <form action="" id="de-tab-form">
                                                                     <div class="row">
                                                                         <div class="col-12 mt-3">
                                                                             <h6>1st Programme Preference</h6>
@@ -472,7 +473,7 @@
                                                                         </div>
                                                                         <div class="col-6 mt-3">
                                                                             <h6>Score</h6>
-                                                                            <input type="number" placeholder="Please State">
+                                                                            <input type="number" id="score" name="number" placeholder="Please State">
                                                                         </div>
                                                                         <div class="col-12 mt-3">
                                                                             <h6>English Proficiency Certificate</h6>
@@ -491,7 +492,7 @@
                                                                         <div class="col-6 mt-3">
                                                                             <h6>Resume/CV</h6>
                                                                             <div class="position-relative">
-                                                                                <input type="file" required style="color: transparent">
+                                                                                <input type="file" id="resume" required style="color: transparent">
                                                                                 <div class="file-field d-flex justify-content-between">
                                                                                     <h6>Add other academic qualification
                                                                                     </h6>
@@ -513,7 +514,53 @@
                                                                         <div class="col-12 mt-4 text-center d-flex flex-row" style="justify-content: space-evenly;">
 
                                                                             <a href="#!" type="button" class="back">Back</a>
-                                                                            <a href="#!" type="button" class="green submit1">Submit</a>
+                                                                            <button type="submit" class="green submit1 pt-0" id="Academic-submit" data-toggle="modal">Submit</button>
+                                                                        </div>
+                                                                        <!-- Modal 2 -->
+                                                                        <div class="modal fade" id="exampleModalVal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                            <div class="modal-dialog" role="document">
+                                                                                <div class="modal-content">
+                                                                                    <img src="./assets/img/warn.png" alt="" width="30px">
+                                                                                    <h4>Incomplete Form</h4>
+                                                                                    <p>
+                                                                                        Please fill up the following details before proceeding :
+                                                                                    </p>
+                                                                                    <ul class="m-list-2">
+                                                                                        <li>
+                                                                                            <h6>Personal Details</h6>
+                                                                                        </li>
+                                                                                        <li><span>X</span> Passport photo with white background</li>
+                                                                                        <li>
+                                                                                            <h6>Personal Details</h6>
+                                                                                        </li>
+                                                                                        <li><span>X</span> Academic transcript</li>
+
+                                                                                    </ul>
+                                                                                    <a href="#!" class="green" data-dismiss="modal">Back</a>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!-- modal-3 -->
+                                                                        <div class="modal fade" id="exampleModalVal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                            <div class="modal-dialog" role="document">
+                                                                                <div class="modal-content">
+                                                                                    <img src="./assets/img/tik.png" alt="" width="40px">
+                                                                                    <h4>Declaration</h4>
+                                                                                    <p>
+                                                                                        I confirm that, to the best of our knowledge, the information given in this form is correct and complete. I have read instructions, in particular those relating to this section. I understand what it says, and abide by the conditions set out there which
+                                                                                        I accept as condition of this application.<br> By clicking on ‘Submit’ below,
+                                                                                        you are agreeing to the<br>
+                                                                                        <a href="#!" class="sim">Limkokwing Terms and Regulations</a>
+                                                                                    </p>
+                                                                                    <div class="d-flex justify-content-around flex-row">
+                                                                                        <a href="#!" class="white" data-dismiss="modal">Cancel</a>
+                                                                                        <a href="#!" class="green" data-dismiss="modal" id="submit-reg-2">Submit</a>
+                                                                                    </div>
+
+
+                                                                                </div>
+                                                                            </div>
                                                                         </div>
 
                                                                     </div>
@@ -611,7 +658,24 @@
                                                         </a>
                                                     </div>
                                                     <div class="col-12">
-                                                        <a href="#!" class="gray">Confirm Programme</a>
+                                                        <a href="#!" class="gray" data-target="#exampleModalVal3" data-toggle="modal">Confirm Programme</a>
+                                                        <div class="modal fade" id="exampleModalVal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog" role="document">
+                                                                <div class="modal-content">
+                                                                    <img src="./assets/img/tik.png" alt="" width="40px">
+                                                                    <h4>Confirm Selection</h4>
+                                                                    <p>
+                                                                        Please make sure that you have selected the correct programme. This action could not be changed later. To change the preferred programme, you have to restart the whole application process.
+                                                                    </p>
+                                                                    <div class="d-flex justify-content-around flex-row">
+                                                                        <a href="#!" class="white" data-dismiss="modal">Cancel</a>
+                                                                        <a href="#!" class="green" data-dismiss="modal" id="submit-reg-3">Proceed</a>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                     <div class="col-12 mt-5 position-relative">
                                                         <h4>Browse other related programmes</h4>
@@ -838,7 +902,7 @@
                                                                                 <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                                                     <div class="modal-dialog" role="document" data-dismiss="modal" aria-label="Close">
                                                                                         <div class="modal-content">
-                                                                                            View Offer letter
+                                                                                            <img src="./assets/img/convocation.png" width="100%" alt="" data-dismiss="modal" aria-label="Close">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -846,20 +910,16 @@
                                                                                 <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                                                     <div class="modal-dialog" role="document">
                                                                                         <div class="modal-content">
-                                                                                            <div class="modal-header">
-                                                                                                <h5 class="modal-title" id="exampleModalLabel1">
-                                                                                                    Modal title</h5>
-                                                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                                                <span
-                                                                                                    aria-hidden="true">&times;</span>
-                                                                                            </button>
+                                                                                            <div class="download-btn">
+                                                                                                <a href="#!"><i class="fas fa-download"></i></a>
                                                                                             </div>
-                                                                                            <div class="modal-body">
-                                                                                                ...
-                                                                                            </div>
+                                                                                            <img src="./assets/img/convocation.png" width="100%" alt="">
+                                                                                            <p>
+                                                                                                Please read and go through the offer letter to avoid mistakes and typography before confirming the offer letter
+                                                                                            </p>
                                                                                             <button id="Confirm-offer" data-dismiss="modal" aria-label="Close">Confirm
                                                                                             Offer Letter</button>
-                                                                                            <button id="cancel" data-dismiss="modal" aria-label="Close">Cancel</button>
+                                                                                            <button id="cancel" data-dismiss="modal" aria-label="Close">I disagree</button>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -1049,14 +1109,17 @@
                                                                                 <div class="modal fade" id="exampleModal23" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                                                     <div class="modal-dialog" role="document">
                                                                                         <div class="modal-content">
+                                                                                            <img src="./assets/img/warn.png" alt="" width="30px">
+                                                                                            <h4>No Airport Pickup Needed</h4>
+                                                                                            <p>
+                                                                                                Please make sure that you have seLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                                                                                            </p>
+                                                                                            <div class="d-flex justify-content-around flex-row">
+                                                                                                <a href="#!" class="white" data-dismiss="modal">Cancel</a>
+                                                                                                <a href="#!" class="green proceed-23" data-dismiss="modal" id="proceed-23">Proceed</a>
+                                                                                            </div>
 
-                                                                                            <div class="modal-body">
-                                                                                                ...
-                                                                                            </div>
-                                                                                            <div class="modal-footer">
-                                                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">cancel</button>
-                                                                                                <a href="#!" class="proceed-23" data-dismiss="modal" id="proceed-23">proceed</a>
-                                                                                            </div>
+
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -1118,7 +1181,24 @@
                                                                                 class="fas fa-plus"></i> Add
                                                                             Field</a>
 
-                                                                            <a href="#!" class="proceed-4 green">Proceed</a>
+                                                                            <a href="#!" class="sim-green green" data-target="#exampleModal224" data-toggle="modal">Proceed</a>
+                                                                            <div class="modal fade" id="exampleModal224" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                                <div class="modal-dialog" role="document">
+                                                                                    <div class="modal-content">
+                                                                                        <img src="./assets/img/tik.png" alt="" width="30px">
+                                                                                        <h4>Confirm!</h4>
+                                                                                        <p>
+                                                                                            Please make sure that you have seLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                                                                                        </p>
+                                                                                        <div class="d-flex justify-content-around flex-row">
+                                                                                            <a href="#!" class="white" data-dismiss="modal">Cancel</a>
+                                                                                            <a href="#!" class="green proceed-4" data-dismiss="modal">Submit</a>
+                                                                                        </div>
+
+
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
 
                                                                         </form>
                                                                     </div>
@@ -1140,14 +1220,17 @@
                                                                                 <div class="modal fade" id="exampleModal24" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                                                     <div class="modal-dialog" role="document">
                                                                                         <div class="modal-content">
+                                                                                            <img src="./assets/img/warn.png" alt="" width="30px">
+                                                                                            <h4>No Airport Pickup Needed</h4>
+                                                                                            <p>
+                                                                                                Please make sure that you have seLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                                                                                            </p>
+                                                                                            <div class="d-flex justify-content-around flex-row">
+                                                                                                <a href="#!" class="white" data-dismiss="modal">Cancel</a>
+                                                                                                <a href="#!" class="green proceed-24" data-dismiss="modal" id="proceed-24">Proceed</a>
+                                                                                            </div>
 
-                                                                                            <div class="modal-body">
-                                                                                                ...
-                                                                                            </div>
-                                                                                            <div class="modal-footer">
-                                                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">cancel</button>
-                                                                                                <a href="#!" class="proceed-24" data-dismiss="modal" id="proceed-24">proceed</a>
-                                                                                            </div>
+
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -1628,8 +1711,25 @@
                                                                                         <div class="col-12">
                                                                                             <div class="d-flex justify-content-space-around flex-row mt-4">
                                                                                                 <a href="#!" class="white">Cancel</a>
-                                                                                                <a href="#!" class="green" id="proceed-55">Proceed
+                                                                                                <a href="#!" class="green" data-target="#exampleModal225" data-toggle="modal">Proceed
                                                                                                 To Payment</a>
+                                                                                                <div class="modal fade" id="exampleModal225" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                                                    <div class="modal-dialog" role="document">
+                                                                                                        <div class="modal-content">
+                                                                                                            <img src="./assets/img/tik.png" alt="" width="40px">
+                                                                                                            <h4>Confirm Selection</h4>
+                                                                                                            <p>
+                                                                                                                Please make sure that you have selected the correct programme. This action could not be changed later. To change the preferred programme, you have to restart the whole application process.
+                                                                                                            </p>
+                                                                                                            <div class="d-flex justify-content-around flex-row">
+                                                                                                                <a href="#!" class="white" data-dismiss="modal">Cancel</a>
+                                                                                                                <a href="#!" class="green" data-dismiss="modal" id="proceed-55">Proceed</a>
+                                                                                                            </div>
+
+
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
                                                                                             </div>
 
                                                                                         </div>
@@ -1863,14 +1963,19 @@
                                                                             <div class="modal fade" id="exampleModalNext" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                                                 <div class="modal-dialog" role="document">
                                                                                     <div class="modal-content">
-                                                                                        <div class="modal-footer">
-                                                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">cancel</button>
-                                                                                            <button type="button" class="btn btn-primary" id="submit-next" data-dismiss="modal">submit</button>
+                                                                                        <img src="./assets/img/tik.png" alt="" width="40px">
+                                                                                        <h4>Confirm Selection</h4>
+                                                                                        <p>
+                                                                                            Please make sure that you have selected the correct programme. This action could not be changed later. To change the preferred programme, you have to restart the whole application process.
+                                                                                        </p>
+                                                                                        <div class="d-flex justify-content-around flex-row">
+                                                                                            <a href="#!" class="white" data-dismiss="modal">Cancel</a>
+                                                                                            <a href="#!" class="green" data-dismiss="modal" id="submit-next">Proceed</a>
                                                                                         </div>
+
+
                                                                                     </div>
                                                                                 </div>
-                                                                                <!-- modal end-->
-
                                                                             </div>
                                                                             <a href="#!" class="simple-a">View medical
                                                                             checkup requirement <i
@@ -2562,6 +2667,7 @@
     </a>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 <!-- Swiper JS -->
@@ -2602,14 +2708,12 @@
     });
     // Tabs change on btn click
     $('.submit').click(function() {
-        $("#pills-details-tab").trigger("click")
-    })
-    $('.submit1').click(function() {
-        $("#pills-stage-2-tab").trigger("click")
-    })
-    $('.box-3 .gray').click(function() {
-        $("#pills-stage-3-tab").trigger("click")
-    })
+            $("#pills-details-tab").trigger("click")
+        })
+        // $('.submit1').click(function() {
+        //     $("#pills-stage-2-tab").trigger("click")
+        // })
+
 
     // stage2
     $('.toggleClick').click(function() {
@@ -2625,6 +2729,7 @@
         });
         $(this).closest('.box-3').find('.sub-box a').css('color', 'black');
         $(this).closest('.box-3').find('.gray').css('display', 'block');
+        $(this).closest('.box-3').find('.gray').css('pointer-events', 'none');
         $(this).closest('.box-3').find('.sub-box .img-1').css('display', 'none');
         $(this).closest('.box-3').find('.sub-box .img-2').css('display', 'block');
         $(this).closest('.box-3').find('.sub-box .black-col').css('display', 'none');
@@ -2659,8 +2764,10 @@
         });
         $(this).closest('.box-3').find('.gray').css({
             'backgroundColor': '#02A574',
-            'color': '#fff'
+            'color': '#fff',
+
         });
+        $(this).closest('.box-3').find('.gray').css('pointer-events', 'auto');
     });
     // stage 3
     var swiper = new Swiper(".mySwiper", {
@@ -2688,8 +2795,8 @@
         },
     });
     $('.clicktoggle-2').click(function() {
-        $('.hide-2').css('display', 'block');
-        $('.hide-1').css('display', 'none');
+        $('.hide-div .hide-2').css('display', 'block');
+        $('.hide-div .hide-1').css('display', 'none');
 
     })
     $('.hide-2').click(function() {
@@ -2698,41 +2805,41 @@
 
     });
     $('#flexRadioDefault2').click(function() {
-        $('.hide-2').css('display', 'none');
-        $('.hide-1').css('display', 'block');
+        $('.hide-div .hide-2').css('display', 'none');
+        $('.hide-div .hide-1').css('display', 'block');
     })
     $('#flexRadioDefault1').click(function() {
-        $('.hide-2').css('display', 'none');
-        $('.hide-1').css('display', 'block');
+        $('.hide-div .hide-2').css('display', 'none');
+        $('.hide-div .hide-1').css('display', 'block');
     });
     // Modal Button CLick
     $('#Proceed').click(function() {
-        $('.sub-box-3').css('backgroundColor', '#02A574');
-        $('.hide-1').css('display', 'none');
-        $('.radio-type').css('display', 'none');
-        $('.sub-box-3 h4').text('Payment Verified!');
-        $('.sub-box-4').css('backgroundColor', '#E89005');
-        $('.sub-box-4 .bg-gray').removeAttr('disabled');
-        $('.sub-box-4 .bg-gray').css('background-color', '#E89005');
+        $('#pills-reg .sub-box-3').css('backgroundColor', '#02A574');
+        $(' .hide-1').css('display', 'none');
+        $('#pills-reg .radio-type').css('display', 'none');
+        $('#pills-reg .sub-box-3 h4').text('Payment Verified!');
+        $('#pills-reg .sub-box-4').css('backgroundColor', '#E89005');
+        $('#pills-reg .sub-box-4 .bg-gray').removeAttr('disabled');
+        $('#pills-reg .sub-box-4 .bg-gray').css('background-color', '#E89005');
 
 
     });
     $('#Submit2').click(function() {
-        $('.sub-box-3').css('backgroundColor', '#E89005');
-        $('.hide-1').css('display', 'none');
-        $('.radio-type').css('display', 'none');
-        $('.sub-box-3 h4').text('Payment Verification');
+        $('.hide-div .sub-box-3').css('backgroundColor', '#E89005');
+        $('.hide-div .hide-1').css('display', 'none');
+        $('.hide-div .radio-type').css('display', 'none');
+        $('.hide-div .sub-box-3 h4').text('Payment Verification');
         // $('.sub-box-4').css('backgroundColor', '#E89005');
         $('.sub-box-4 .bg-gray').removeAttr('disabled');
         // $('.sub-box-4 .bg-gray').css('background-color', '#E89005');
         $('.hide-div2').css('display', 'none');
         $('.hide-div').css('display', 'flex');
-        $('.hide-2').css('display', 'none');
+        $('.hide-div .hide-2').css('display', 'none');
 
 
     });
-    $('.bg-gray').click(function() {
-        $('.sub-box-3').css('backgroundColor', '#02A574');
+    $('.sub-box-4 .bg-gray').click(function() {
+        $('.hide-div .sub-box-3').css('backgroundColor', '#02A574');
     })
 
 
@@ -2793,17 +2900,19 @@
         $('.btn-proceed').css('opacity', '1');
     });
     $('.btn-proceed').click(() => {
-        $('.sub-box-6').css('background-color', '#02A574');
+        $('.box-2-2 .sub-box-6').css('background-color', '#02A574');
         $('.btn-proceed').css('display', 'none');
         $('.btn-proceed-2').css('display', 'block');
-        $('.sub-box-6 h4').text('VAL Uploaded');
-        $('.sub-box-5').css('background-color', '#BEBEBE')
-        $('.sub-box-5 .green').css({
+        $('.box-2-2 .sub-box-6 h4').text('VAL Uploaded');
+        $('.box-2-2 .sub-box-5').css('background-color', '#BEBEBE')
+        $('.box-2-2 .sub-box-5 .green').css({
             backgroundColor: '#BEBEBE',
             border: '1.5px solid #fff',
             color: '#fff'
         });
-        $('.sub-box-5 h6,h5,p').css('color', 'white');
+        $(' .sub-box-5 h6').css('color', 'white');
+        $(' .sub-box-5 h5').css('color', 'white');
+        $(' .sub-box-5 p').css('color', 'white');
         var filename = $('.imp1').val();
 
         $('.btn-proceed-2').attr('href', filename)
@@ -2821,6 +2930,7 @@
         var filename = $('.imp2').val();
         $('.box-5 .form-1 h6').text('File Selected' + filename);
         $('.border-b').css('display', 'block');
+        $('.border-b').css('color', '#7c7c7c');
         $('.check-t input').trigger('click');
         $('.radio-t').css('display', 'block');
         $('.add-field').css('display', 'block');
@@ -2857,7 +2967,7 @@
             'background-color': '#02A574',
             'border': 'none'
         });
-        $('.content').css({
+        $('.card-2 .content').css({
             'background-color': '#02A574',
             'color': 'white',
             'border-bottom-left-radius': '10px',
@@ -2905,35 +3015,35 @@
 
     });
     $('#flexRadioDefault101').click(function() {
-        $('.hide-3').css('display', 'none');
-        $('.hide-1').css('display', 'block');
+        $('.payment .hide-3').css('display', 'none');
+        $('.payment .hide-1').css('display', 'block');
 
     })
     $('#flexRadioDefault201').click(function() {
-        $('.hide-3').css('display', 'none');
-        $('.hide-1').css('display', 'block');
+        $('.payment .hide-3').css('display', 'none');
+        $('.payment .hide-1').css('display', 'block');
     })
     $('#flexRadioDefault301').click(function() {
-        $('.hide-3').css('display', 'block');
-        $('.hide-1').css('display', 'none');
+        $('.payment .hide-3').css('display', 'block');
+        $('.payment .hide-1').css('display', 'none');
     })
     $('#Proceed999').click(function() {
-        $('.payment .sub-box-3').css('background-color', '#02A574');
-        $('.payment .sub-box-3 .radio-type').css('display', 'none');
-        $('.payment .sub-box-3 .hide-1').css('display', 'none');
-        $('.payment .sub-box-3 h4').text('Payment Verified!');
+        $('#pills-acco .payment .sub-box-3').css('background-color', '#02A574');
+        $('#pills-acco .payment .sub-box-3 .radio-type').css('display', 'none');
+        $('#pills-acco .payment .sub-box-3 .hide-1').css('display', 'none');
+        $('#pills-acco .payment .sub-box-3 h4').text('Payment Verified!');
     });
     $('.payment .hide-3').click(function() {
-        $('.payment .sub-box-3').css('display', 'none');
-        $('.payment .hide-div2').css('display', 'block');
+        $('#pills-acco .payment .sub-box-3').css('display', 'none');
+        $('#pills-acco .payment .hide-div2').css('display', 'block');
     })
     $('#submit205').click(function() {
         $('.payment .sub-box-3').css('display', 'block');
-        $('.payment .sub-box-3').css('background-color', '#02A574');
-        $('.payment .sub-box-3 .radio-type').css('display', 'none');
-        $('.payment .sub-box-3 .hide-3').css('display', 'none');
-        $('.payment .sub-box-3 h4').text('Payment Verified!');
-        $('.payment .hide-div2').css('display', 'none');
+        $('#pills-acco .payment .sub-box-3').css('background-color', '#02A574');
+        $('#pills-acco .payment .sub-box-3 .radio-type').css('display', 'none');
+        $('#pills-acco .payment .sub-box-3 .hide-3').css('display', 'none');
+        $('#pills-acco .payment .sub-box-3 h4').text('Payment Verified!');
+        $('#pills-acco .payment .hide-div2').css('display', 'none');
 
     });
 
@@ -3041,8 +3151,30 @@
         },
     });
     $('#reg-box-hide').click(() => {
-        $('.box-2').hide();
-        $('.reg-page').show();
+            $('.box-2').hide();
+            $('.reg-page').show();
+        })
+        //!======================== Academic Tabs From Validation
+
+
+    var reg = $('#de-tab-form');
+    if (reg.length) {
+        reg.validate({
+            rules: {
+                number: {
+                    required: true
+                }
+            }
+        })
+    };
+    $(document).ready(function() {
+        $('#Academic-submit').click(function() {
+            $('#de-tab-form input').val() !== '' ? $('#exampleModalVal2').modal({
+                show: true
+            }) : $('#exampleModalVal').modal({
+                show: true
+            });
+        })
     })
 
 
@@ -3053,11 +3185,15 @@
 
 
 
-
-
-
-
-    // On tabs Click Content refresh
+    // modal buttn click tabs change
+    $('#submit-reg-2').click(function() {
+            $("#pills-stage-2-tab").trigger("click");
+        })
+        // stage 2
+    $('#submit-reg-3').click(function() {
+            $("#pills-stage-3-tab").trigger("click");
+        })
+        // On tabs Click Content refresh
     $("#pills-tab").tabs("option", "active", 0);
     $("#pills-tab").tabs("option", "active", 1);
 </script>

@@ -161,3 +161,7 @@ input[type=radio] {
 input[type=checkbox] {
     accent-color: #02A574;
 }
+
+.error {
+    color: red !important;
+}
