@@ -1,8 +1,157 @@
+@media only screen and (max-width: 1490.5px) {
+    .main .right-side .box-2 .cl-tabs .nav-item {
+        width: 30%;
+        position: relative;
+    }
+}
+
+
+/* !==============1200================== */
+
+@media only screen and (max-width: 1199.5px) {
+    .main .left-side {
+        z-index: 9;
+        background-color: #fff;
+        border: 1px solid white;
+    }
+    #toggleSide {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        align-self: center;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    #toggleSide a {
+        color: #171717;
+        text-decoration: none;
+    }
+    #toggleSide a i {
+        font-size: 1.5rem;
+    }
+    .main .left-side #ClickToggle i {
+        right: 30px;
+    }
+}
+
+
+/* !==============1050================== */
+
+@media only screen and (max-width: 1050.5px) {
+    .main .right-side .box-2 .cl-tabs .nav-item {
+        width: 35%;
+        position: relative;
+    }
+    .main .left-side {
+        width: 30%;
+    }
+}
+
+
+/*!=========================== 900======================== */
+
+@media only screen and (max-width: 900.5px) {
+    .main .left-side {
+        width: 40%;
+    }
+}
+
+
+/*!=========================== 850======================== */
+
+@media only screen and (max-width: 850.5px) {
+    .main .right-side .upper-section .heading-sec {
+        padding: 8px 20px 0;
+    }
+}
+
+
+/*!=========================== 767======================== */
+
 @media only screen and (max-width: 767.5px) {
     .black-log .login .box {
         width: 100%;
     }
+    .main .right-side .upper-section {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .main .left-side {
+        width: 50%;
+    }
+    .main .right-side .box-2 .nav-item {
+        width: 50%;
+        position: relative;
+    }
+    .main .right-side .box-2 {
+        padding: 20px 10px;
+    }
+    .main .right-side .box-5 .arv {
+        padding: 100px 0;
+    }
+    .main .right-side .box-5 .arv2 {
+        padding: 100px 0;
+    }
+    .main .right-side .box-5 .payment .sub-box-3 .radio-type {
+        flex-direction: column;
+    }
+    .main .right-side .box-5 .payment .sub-box-3 .radio-type img {
+        width: 100px;
+        margin: 0 auto;
+    }
+    .main .right-side .box-5 .payment .hide-div2 form ul {
+        flex-wrap: wrap;
+    }
+    .main .right-side .box-5 .payment .hide-div2 form {
+        width: 100%;
+    }
+    .main .right-side .box-2 #pills-tab .nav-item {
+        width: 100%;
+    }
+    .main .right-side .box-6 .sub-box-3 .yellow-bg {
+        width: 100%;
+    }
+    input {
+        width: 100%;
+    }
+    .main .right-side .box-6 .sub-box-3 .up-f {
+        width: 100%;
+    }
+    .main .right-side .box-6 #pills-fee .sub-box-3 .radio-type {
+        flex-direction: column;
+    }
+    .main .right-side .box-6 #pills-fee .sub-box-3 .radio-type img {
+        width: 100px;
+        margin: 0 auto;
+    }
+    .main .right-side .box-6 #pills-fee .hide-div2 form {
+        width: 100%;
+    }
+    .main .right-side .box-6 #pills-fee .hide-div2 form ul {
+        flex-wrap: wrap;
+    }
+    .main .right-side .box-6 .green {
+        width: 100%;
+    }
+    .main .right-side .box-2 .cl-tabs .sub-box-3 .radio-type {
+        flex-direction: column;
+    }
+    .main .right-side .box-2 .cl-tabs .sub-box-3 .radio-type img {
+        width: 100px;
+        margin: 0 auto;
+    }
+    .main .right-side .box-2 .cl-tabs .hide-div2 form {
+        width: 100%;
+    }
+    .main .right-side .box-2 .cl-tabs .hide-div2 form ul {
+        flex-wrap: wrap;
+    }
 }
+
+
+/*!=================== 500====================  */
 
 @media only screen and (max-width: 500.5px) {
     .black-log {
@@ -16,10 +165,85 @@
         width: 100%;
         margin-top: 20px;
     }
+    .main .left-side {
+        width: 87%;
+    }
+    .main .left-side #ClickToggle {
+        margin-top: -26px;
+        padding: 10px 0;
+    }
+    .main .left-side h6 {
+        margin-top: -29px;
+        padding: 20px 0;
+        background-color: #000;
+    }
+    .main .right-side .box-2 .cl-tabs form .green {
+        width: 100%;
+    }
+    .main .right-side .box-2 .cl-tabs .back {
+        width: 100%;
+    }
+    .main .right-side .box-3 .gray {
+        width: 100%;
+    }
+    .main .right-side .box-5 .gray {
+        width: 100%;
+    }
+    .sim-green.green {
+        width: 100% !important;
+    }
+    .main .right-side .box-2 .cl-tabs .nav-item {
+        width: 100%;
+        position: relative;
+    }
+    .main .right-side .box-5 .white-2 {
+        width: 100%;
+    }
+    .main .right-side .box-5 .booking-details form .white {
+        width: 100%;
+    }
+    .main .right-side .box-5 .booking-details form .green {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .main {
+        margin: 20px 0px 0;
+    }
 }
+
+
+/* !=================450========================= */
 
 @media only screen and (max-width: 450px) {
     .black-log .login .box {
         padding: 30px 15px;
+    }
+    .modal-dialog {
+        width: 100% !important;
+    }
+    .modal {
+        left: -3px;
+    }
+    .modal-content {
+        width: 100% !important;
+    }
+    .main .right-side .box-5 .d-box .rooms li a {
+        width: 120px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .main .right-side .upper-section {
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: column;
+        text-align: left;
+        margin: 0 auto;
+    }
+    .main .right-side .upper-section .heading-sec {
+        padding: 8px 10px 0;
+    }
+    #toggleSide {
+        margin: 0 auto;
     }
 }
