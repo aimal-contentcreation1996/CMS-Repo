@@ -1,6 +1,7 @@
 /*! exampleModalReg */
 
 .modal {
+    -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
     top: 18%;
 }

@@ -59,6 +59,22 @@ body {
                     padding-left: 10px;
                     margin-top: 20px;
                     border-radius: 5px;
+                    &::-webkit-input-placeholder {
+                        color: $black-3;
+                        font-size: 0.938rem;
+                    }
+                    &::-moz-placeholder {
+                        color: $black-3;
+                        font-size: 0.938rem;
+                    }
+                    &:-ms-input-placeholder {
+                        color: $black-3;
+                        font-size: 0.938rem;
+                    }
+                    &::-ms-input-placeholder {
+                        color: $black-3;
+                        font-size: 0.938rem;
+                    }
                     &::placeholder {
                         color: $black-3;
                         font-size: 0.938rem;
@@ -141,6 +157,7 @@ body {
     }
     input:-webkit-autofill,
     input:-webkit-autofill:focus {
+        -webkit-transition: background-color 600000s 0s, color 600000s 0s;
         transition: background-color 600000s 0s, color 600000s 0s;
     }
     input[data-autocompleted] {
@@ -590,6 +607,22 @@ body {
                         margin-top: 7px;
                         border: none;
                         outline: none;
+                        &::-webkit-input-placeholder {
+                            color: $gray;
+                            font-size: 0.9rem !important;
+                        }
+                        &::-moz-placeholder {
+                            color: $gray;
+                            font-size: 0.9rem !important;
+                        }
+                        &:-ms-input-placeholder {
+                            color: $gray;
+                            font-size: 0.9rem !important;
+                        }
+                        &::-ms-input-placeholder {
+                            color: $gray;
+                            font-size: 0.9rem !important;
+                        }
                         &::placeholder {
                             color: $gray;
                             font-size: 0.9rem !important;
@@ -632,6 +665,8 @@ body {
                         height: 40px;
                         border-radius: 6px;
                         padding-top: 8px;
+                        display: block;
+                        margin: 0 auto;
                     }
                 }
                 .sub-box-2 {
@@ -1428,7 +1463,9 @@ body {
                     height: 350px;
                     overflow: hidden;
                     img {
+                        -o-object-position: center;
                         object-position: center;
+                        -o-object-fit: cover;
                         object-fit: cover;
                     }
                 }
@@ -2330,6 +2367,7 @@ body {
         padding-right: 10px;
         .line-img {
             width: 16px;
+            -o-object-fit: contain;
             object-fit: contain;
             cursor: pointer;
             margin-right: 15px;
@@ -2369,6 +2407,7 @@ body {
         }
         .arr-img {
             width: 20px;
+            -o-object-fit: contain;
             object-fit: contain;
             cursor: pointer;
         }
@@ -2382,6 +2421,7 @@ body {
         justify-content: space-around;
         .pdf-img {
             width: auto;
+            -o-object-fit: contain;
             object-fit: contain;
         }
         .pdf-para {

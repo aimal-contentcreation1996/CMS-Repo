@@ -587,6 +587,16 @@ body {
   border: none;
   outline: none;
 }
+.main .right-side .box-2 .cl-tabs form input::-moz-placeholder,
+.main .right-side .box-2 .cl-tabs form select::-moz-placeholder {
+  color: #bebebe;
+  font-size: 0.9rem !important;
+}
+.main .right-side .box-2 .cl-tabs form input:-ms-input-placeholder,
+.main .right-side .box-2 .cl-tabs form select:-ms-input-placeholder {
+  color: #bebebe;
+  font-size: 0.9rem !important;
+}
 .main .right-side .box-2 .cl-tabs form input::-moz-placeholder, .main .right-side .box-2 .cl-tabs form select::-moz-placeholder {
   color: #bebebe;
   font-size: 0.9rem !important;
@@ -637,6 +647,8 @@ body {
   height: 40px;
   border-radius: 6px;
   padding-top: 8px;
+  display: block;
+  margin: 0 auto;
 }
 .main .right-side .box-2 .cl-tabs .sub-box-2 {
   width: 100%;
@@ -1422,9 +1434,9 @@ body {
 }
 .main .right-side .box-5 .card-2 .img-height img {
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .main .right-side .box-5 .card-2 h6 {
   color: #bebebe;
@@ -2308,7 +2320,7 @@ body {
 .sect-scnd-hero .data1 .line-img {
   width: 16px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   cursor: pointer;
   margin-right: 15px;
 }
@@ -2348,7 +2360,7 @@ body {
 .sect-scnd-hero .download-hero .arr-img {
   width: 20px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   cursor: pointer;
 }
 .sect-scnd-hero .pdf-hero {
@@ -2362,7 +2374,7 @@ body {
 .sect-scnd-hero .pdf-hero .pdf-img {
   width: auto;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .sect-scnd-hero .pdf-hero .pdf-para {
   color: #171717;

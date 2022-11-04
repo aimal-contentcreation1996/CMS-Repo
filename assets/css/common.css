@@ -2,6 +2,16 @@ html {
     scroll-behavior: smooth;
 }
 
+@-moz-document url-prefix() {
+    html,
+    body {
+        scrollbar-width: none;
+    }
+    .left-side {
+        scrollbar-width: none;
+    }
+}
+
 body {
     transition: all 0.9s ease-in-out !important;
 }
@@ -72,6 +82,10 @@ input[type=number] {
 
 ::-webkit-file-upload-button {
     display: none;
+}
+
+input[type="file"]::file-selector-button {
+    visibility: hidden;
 }
 
 .float {
