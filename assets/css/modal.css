@@ -480,3 +480,116 @@
 #submit505 {
     margin: 0 auto;
 }
+
+#exampleModalDel .modal-dialog {
+    background-color: white !important;
+    width: 500px;
+    color: #171717;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 50px 50px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 20px rgb(0 0 0 / 5%);
+}
+
+#exampleModalDel p {
+    font-size: 0.9rem;
+    padding-top: 10px;
+}
+
+#exampleModalDel .white {
+    background-color: white !important;
+    color: #171717;
+    border: 1px solid #7c7c7c;
+    display: inline-block;
+    height: 35px;
+    border-radius: 6px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 4px;
+    font-size: 0.983rem;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+}
+
+#exampleModalDel .delete-card {
+    background-color: #C3423F !important;
+    color: #fff;
+    border: 1px solid #C3423F;
+    display: inline-block;
+    height: 35px;
+    border-radius: 6px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 4px;
+    font-size: 0.983rem;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+}
+
+#exampleModalEm .modal-dialog {
+    background-color: white !important;
+    width: 500px;
+    color: #171717;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 50px 50px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 20px rgb(0 0 0 / 5%);
+}
+
+#exampleModalEm .modal-dialog a {
+    background-color: #02A574;
+    color: white;
+    border: none;
+    outline: none;
+    height: 35px;
+    border-radius: 6px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 6px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#exampleModalWhat .modal-dialog {
+    background-color: white !important;
+    width: 500px;
+    color: #171717;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 50px 50px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 20px rgb(0 0 0 / 5%);
+}
+
+#exampleModalWhat .modal-dialog a {
+    background-color: #02A574;
+    color: white;
+    border: none;
+    outline: none;
+    height: 35px;
+    border-radius: 6px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 6px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 auto;
+}

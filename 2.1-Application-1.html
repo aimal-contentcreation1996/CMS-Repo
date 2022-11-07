@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./assets/css/common.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
     <title>2.1 Application - 1</title>
 
 </head>
@@ -129,10 +130,28 @@
                                     </h3>
                                 </div>
                                 <div class="row no-gutters">
-                                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-2 p-2">
+                                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-2 p-2 delete-div">
                                         <a href="#!" style="text-decoration: none;">
                                             <div class="card-1">
-                                                <i class="fas fa-xmark"></i>
+                                                <a href="#!" data-toggle="modal" data-target="#exampleModalDel" style="text-decoration: none; color: black;">
+                                                    <i class="fas fa-xmark"></i>
+                                                </a>
+                                                <div class="modal fade" id="exampleModalDel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-modal="true">
+                                                    <div class="modal-dialog" role="document">
+                                                        <div class="modal-content">
+                                                            <img src="./assets/img/warn.png" alt="" width="30px">
+                                                            <h4>Are you sure you want to<br> delete the application?</h4>
+                                                            <p>
+                                                                Lorem ipsum dolor sit amet, consetetur<br> sadipscing elitr, sed diam nonumy eirmod
+                                                            </p>
+                                                            <div class="d-flex justify-content-around flex-row">
+                                                                <a href="#!" class="white" data-dismiss="modal">Cancel</a>
+                                                                <a href="#!" type="button" data-dismiss="modal" class="delete-card">Delete</a>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <div class="content">
                                                     <h4>Cyberjaya</h4>
                                                     <h6>Malaysia</h6>
@@ -145,14 +164,16 @@
 
                                                     </div>
                                                 </div>
-                                                <a href="#!" class="white">Continue</a>
+                                                <a href="#pills-personal-tab" class="white">Continue</a>
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-2 p-2">
+                                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-2 p-2 delete-div">
                                         <a href="#!" style="text-decoration: none;">
                                             <div class="card-1">
-                                                <i class="fas fa-xmark"></i>
+                                                <a href="#!" class="delete-card" style="text-decoration: none; color: black;">
+                                                    <i class="fas fa-xmark"></i>
+                                                </a>
                                                 <div class="content">
                                                     <h4>Cyberjaya</h4>
                                                     <h6>Malaysia</h6>
@@ -169,10 +190,12 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-2 p-2">
+                                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-2 p-2 delete-div">
                                         <a href="#!" style="text-decoration: none;">
                                             <div class="card-1">
-                                                <i class="fas fa-xmark"></i>
+                                                <a href="#!" class="delete-card" style="text-decoration: none; color: black;">
+                                                    <i class="fas fa-xmark"></i>
+                                                </a>
                                                 <div class="content">
                                                     <h4>Cyberjaya</h4>
                                                     <h6>Malaysia</h6>
@@ -189,18 +212,35 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-2 p-2">
+                                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-2 p-2 delete-div">
                                         <a href="#!" style="text-decoration: none;">
                                             <div class="card-1">
-                                                <i class="fas fa-xmark"></i>
+                                                <a href="#!" class="delete-card" style="text-decoration: none; color: black;">
+                                                    <i class="fas fa-xmark"></i>
+                                                </a>
                                                 <div class="content">
                                                     <h4>Cyberjaya</h4>
                                                     <h6>Malaysia</h6>
                                                     <h5>Stage 1</h5>
                                                     <h3 class="pt-1">Document Preparation</h3>
                                                     <p class="pt-2">
-                                                        BA (Hons) of Creative Imaging in Digital Photography
+                                                        BA (Hons) of Creative Imaging in Digital Photography<br>
+                                                        <a href="#!" class="d-inline-block" style="color: #171717" data-toggle="modal" data-target="#exampleModalWhat">What's next</a>
                                                     </p>
+                                                    <!--! Modal -->
+                                                    <div class="modal fade" id="exampleModalWhat" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog" role="document">
+                                                            <div class="modal-content">
+                                                                <img src="./assets/img/tik.png" alt="" width="40px">
+                                                                <h4>Pending eligibility</h4>
+                                                                <p>
+                                                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                                                </p>
+                                                                <a href="#!" data-dismiss="modal" class="green">Back</a>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                     <div style="height:75px;">
 
                                                     </div>
@@ -217,6 +257,7 @@
             </div>
         </div>
     </section>
+
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -230,8 +271,47 @@
         $('.type-btn-holder ul li').click(function() {
             $('.type-btn-holder ul li').removeClass('active');
             $(this).addClass('active');
-        })
+        });
+
     })
+    $('.delete-card').click(function() {
+        setTimeout(() => {
+            $(this).closest('.delete-div').remove();
+        }, 500);
+        $('#exampleModalDel').modal({
+            show: false
+        });
+
+
+    });
+
+    // var $j = jQuery.noConflict();
+    // $j(window).load(function() {
+    //     initTabs();
+    // });
+
+    // function initTabs() {
+
+    //     if ($j('.tabs').length) {
+    //         var $tabsNav = $j('.nav-pills');
+    //         var $tabsNavLis = $tabsNav.children('li');
+    //         $tabsNav.each(function() {
+    //             var $this = $j(this);
+    //             $this.next().children('.tab-content').stop(true, true).hide().first().show();
+    //             $this.children('li').first().addClass('active').stop(true, true).show();
+    //         });
+    //         $tabsNavLis.on('click', function(e) {
+    //             var $this = $j(this);
+    //             $this.siblings().removeClass('active').end().addClass('active');
+    //             $this.parent().next().children('.tab-content').stop(true, true).hide().siblings($this.find('a').attr('href')).fadeIn();
+    //             e.preventDefault();
+    //         });
+
+    //         var hash = $j.trim(window.location.hash);
+    //         if (hash) $j('.nav-pills a[href$="' + hash + '"]').trigger('click');
+
+    //     }
+    // }
 </script>
 
 </html>

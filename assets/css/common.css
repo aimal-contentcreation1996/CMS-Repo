@@ -170,12 +170,47 @@ input[type=radio] {
 
 input[type=radio] {
     accent-color: #02A574;
+    cursor: pointer;
 }
 
 input[type=checkbox] {
     accent-color: #02A574;
+    cursor: pointer;
+}
+
+input[type=file] {
+    cursor: pointer;
+}
+
+.file-field {
+    cursor: pointer;
+}
+
+select {
+    cursor: pointer;
 }
 
 .error {
     color: red !important;
+}
+
+.right-side .logo-sec {
+    position: fixed;
+    width: 92%;
+    z-index: 99999;
+    background: black;
+    text-align: center;
+    padding: 35px 0;
+    border-radius: 10px;
+    top: 5.5%;
+}
+
+#toggleSide {
+    position: fixed;
+    width: 100%;
+    text-align: right !important;
+}
+
+.add_more_education {
+    cursor: pointer;
 }
