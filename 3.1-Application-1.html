@@ -154,7 +154,26 @@
                             <div class="col-lg-12">
                                 <!--================================== Box-1====================== -->
                                 <div class="box-2">
-                                    <a href="#!" class="simple-anchor"><i class="fas fa-angle-left"></i> Back</a>
+                                    <a href="#!" class="simple-anchor" data-toggle="modal" data-target="#exampleModalBack"><i class="fas fa-angle-left"></i> Back</a>
+                                    <!-- !Modal -->
+                                    <div class="modal fade" id="exampleModalBack" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <img src="./assets/img/tik.png" alt="" width="40px">
+                                                <h4>Continue later</h4>
+                                                <p>
+                                                    You may save your application and proceed to continue later
+                                                </p>
+                                                <div class="d-flex justify-content-around flex-row">
+                                                    <a href="./2.1-Application-1.html" class="white">Leave without saving</a>
+                                                    <a href="./2.1-Application-1.html" class="green">Save draft</a>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <h5>Application Stage</h5>
                                     <ul class="nav nav-pills mb-3 tabs mt-4" id="pills-tab" role="tablist">
                                         <li class="nav-item" role="presentation">
@@ -3342,7 +3361,7 @@
 
     // modal buttn click tabs change
     $('#submit-reg-2').click(function() {
-            $("#pills-stage-2-tab").trigger("click");
+            $("#pills-elig-tab").trigger("click");
         })
         // stage 2
     $('#submit-reg-3').click(function() {
