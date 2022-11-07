@@ -6,20 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--! bootstrap 4 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
     <!--! font awsm -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/fontawesome.min.js" integrity="sha512-j3gF1rYV2kvAKJ0Jo5CdgLgSYS7QYmBVVUjduXdoeBkc4NFV4aSRTi+Rodkiy9ht7ZYEwF+s09S43Z1Y+ujUkA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- !======Swiper js======= -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.css" integrity="sha512-5TGRCl3hPoqtruhO+mubTuySHOfcEBvyIfiWHoCK8wDLmf6C1U73OUoNCU6ZvyT/8vfCcha1INDIo8dabDmQjw==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.min.js" integrity="sha512-naEQG74IcOLQ6K/B1PmhIcZ4i3YE2FXs2zm603E1Q3shbron+PmYLg44/q+xAymD/RvskZ2H8l1Qa7I5qELlrg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./assets/swiper/swiper-bundle.css">
+    <script src="./assets/swiper/swiper-bundle.min.js"></script>
     <!--! Css -->
     <link rel="stylesheet" href="./assets/css/common.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/css/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css" integrity="sha512-gxWow8Mo6q6pLa1XH/CcH8JyiSDEtiwJV78E+D+QP0EVasFs8wKXq16G8CLD4CJ2SnonHr4Lm/yY2fSI2+cbmw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <title>3.1 Application - 1</title>
 
 </head>
@@ -31,9 +32,12 @@
     <section class="main">
         <div class="container-fluid">
             <div class="row no-gutters">
-                <div class="col-lg-3">
+                <div class="col-xl-3 col-12">
+                    <div id="toggleSide" class="d-xl-none d-block">
+                        <a href="#!"><i class="fas fa-bars"></i></a>
+                    </div>
                     <div class="left-side">
-                        <div class="logo-sec">
+                        <div class="logo-sec d-lg-block d-md-block d-sm-block d-none">
                             <img src="./assets/img/logo.svg" width="200px" alt="">
                         </div>
                         <div class="dropbox" style="background-image: url('./assets/img/3.1-1.png');">
@@ -114,9 +118,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-9">
+                <div class="col-xl-9 col-12">
                     <div class="right-side">
                         <div class="row">
+                            <div class="col-12">
+                                <div class="logo-sec d-lg-none d-md-none d-sm-none d-block">
+                                    <img src="./assets/img/logo.svg" width="200px" alt="">
+                                </div>
+                            </div>
                             <div class="col-lg-12">
                                 <div class="upper-section">
                                     <div>
@@ -137,6 +146,9 @@
                                         <h3>Stage 1</h3>
                                         <h5>Document Preparation</h5>
                                     </div>
+                                    <!-- <div class="heading-sec d-xl-none d-block" id="">
+                                        <a href="#!"><i class="fas fa-bars"></i></a>
+                                    </div> -->
                                 </div>
                             </div>
                             <div class="col-lg-12">
@@ -181,6 +193,11 @@
                                                                     class="bg-bold">2</span>Academic
                                                                 Details</button>
                                                             </li>
+                                                            <li class="nav-item" role="presentation">
+                                                                <button class="nav-link" id="pills-elig-tab" data-toggle="pill" data-target="#pills-elig" type="button" role="tab" aria-controls="pills-elig" aria-selected="false"><span
+                                                                    class="bg-bold">3</span>Eligibility
+                                                                </button>
+                                                            </li>
 
                                                         </ul>
                                                         <div class="divider"></div>
@@ -189,11 +206,11 @@
                                                                 <!-- Form -->
                                                                 <form action="">
                                                                     <div class="row">
-                                                                        <div class="col-6 mt-3">
+                                                                        <div class="col-md-6 col-12 mt-3">
                                                                             <h6>Full Name</h6>
                                                                             <input type="text" placeholder="Full Name">
                                                                         </div>
-                                                                        <div class="col-6 mt-3">
+                                                                        <div class="col-md-6 col-12 mt-3">
                                                                             <h6>Nationality</h6>
                                                                             <select id="inputState" class="">
                                                                             <option selected disabled>Please Select
@@ -201,11 +218,11 @@
                                                                             <option>...</option>
                                                                         </select>
                                                                         </div>
-                                                                        <div class="col-6 mt-3">
+                                                                        <div class="col-md-6 col-12 mt-3">
                                                                             <h6>Date of Birth</h6>
                                                                             <input placeholder="Please Select Date" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
                                                                         </div>
-                                                                        <div class="col-6 mt-3">
+                                                                        <div class="col-md-6 col-12 mt-3">
                                                                             <h6>Place of Birth</h6>
                                                                             <select id="inputState" class="">
                                                                             <option selected disabled>Please Select
@@ -213,7 +230,7 @@
                                                                             <option>...</option>
                                                                         </select>
                                                                         </div>
-                                                                        <div class="col-6 mt-3">
+                                                                        <div class="col-md-6 col-12 mt-3">
                                                                             <h6>Gender</h6>
                                                                             <select id="inputState" class="">
                                                                             <option selected disabled>Please Select
@@ -221,7 +238,7 @@
                                                                             <option>...</option>
                                                                         </select>
                                                                         </div>
-                                                                        <div class="col-6 mt-3">
+                                                                        <div class="col-md-6 col-12 mt-3">
                                                                             <h6>Race</h6>
                                                                             <select id="inputState" class="">
                                                                             <option selected disabled>Please Select
@@ -229,11 +246,11 @@
                                                                             <option>...</option>
                                                                         </select>
                                                                         </div>
-                                                                        <div class="col-6 mt-3">
+                                                                        <div class="col-md-6 col-12 mt-3">
                                                                             <h6>Contact Number</h6>
-                                                                            <input type="number" placeholder="Please State Number">
+                                                                            <input class="phone" type="number" placeholder="Please State Number">
                                                                         </div>
-                                                                        <div class="col-6 mt-3">
+                                                                        <div class="col-md-6 col-12 mt-3">
                                                                             <h6>Marital Status</h6>
                                                                             <select id="inputState" class="">
                                                                             <option selected disabled>Please Select
@@ -241,16 +258,20 @@
                                                                             <option>...</option>
                                                                         </select>
                                                                         </div>
-                                                                        <div class="col-6 mt-3">
+                                                                        <div class="col-md-6 col-12 mt-3">
                                                                             <h6>Email Address</h6>
                                                                             <input type="email" placeholder="Email Address">
                                                                         </div>
-                                                                        <div class="col-6 mt-3">
+                                                                        <div class="col-md-6 col-12 mt-3">
                                                                             <h6>Identification Number</h6>
                                                                             <input type="number" placeholder="Please State Number">
                                                                         </div>
-                                                                        <div class="col-6 mt-3">
-                                                                            <h6>Upload Passport Photo with White Background ?</h6>
+                                                                        <div class="col-md-6 col-12 mt-3">
+                                                                            <h6>Upload Passport Photo with White Background
+                                                                                <!--!=== Tool Tip -->
+                                                                                <a type="button" class='d-inline-block ques-c' data-toggle="tooltip" data-placement="top" title="<img src='./assets/img/tooltip.png' width='100%'/>">?</a>
+
+                                                                            </h6>
                                                                             <div class="position-relative">
                                                                                 <input type="file" required style="color: transparent">
                                                                                 <div class="file-field d-flex justify-content-between">
@@ -261,7 +282,7 @@
                                                                             </div>
 
                                                                         </div>
-                                                                        <div class="col-6 mt-3">
+                                                                        <div class="col-md-6 col-12 mt-3">
                                                                             <h6>Upload Passport Document/Identification Card ?</h6>
                                                                             <div class="position-relative">
                                                                                 <input type="file" required style="color: transparent">
@@ -271,11 +292,11 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-6 mt-3">
+                                                                        <div class="col-md-6 col-12 mt-3">
                                                                             <h6>Passport Expiry Date</h6>
                                                                             <input placeholder="Please Select Date" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
                                                                         </div>
-                                                                        <div class="col-6 mt-3">
+                                                                        <div class="col-md-6 col-12 mt-3">
                                                                             <h6>Passport Issuing Country</h6>
                                                                             <select id="inputState" class="">
                                                                             <option selected disabled>Please Select
@@ -286,11 +307,11 @@
                                                                         <div class="col-12 mt-5">
                                                                             <h5>Current Address</h5>
                                                                         </div>
-                                                                        <div class="col-6 mt-3">
+                                                                        <div class="col-md-6 col-12 mt-3">
                                                                             <h6>Address</h6>
                                                                             <input type="text" placeholder="Please State">
                                                                         </div>
-                                                                        <div class="col-6 mt-3">
+                                                                        <div class="col-md-6 col-12 mt-3">
                                                                             <h6>Country</h6>
                                                                             <select id="inputState" class="">
                                                                             <option selected disabled>Please Select
@@ -298,11 +319,11 @@
                                                                             <option>...</option>
                                                                         </select>
                                                                         </div>
-                                                                        <div class="col-6 mt-3">
+                                                                        <div class="col-md-6 col-12 mt-3">
                                                                             <h6>State</h6>
                                                                             <input type="text" placeholder="Please State">
                                                                         </div>
-                                                                        <div class="col-6 mt-3">
+                                                                        <div class="col-md-6 col-12 mt-3">
                                                                             <h6>City</h6>
                                                                             <select id="inputState" class="">
                                                                             <option selected disabled>Please Select
@@ -310,22 +331,22 @@
                                                                             <option>...</option>
                                                                         </select>
                                                                         </div>
-                                                                        <div class="col-6 mt-3">
+                                                                        <div class="col-md-6 col-12 mt-3">
                                                                             <h6>Postcode</h6>
                                                                             <input type="number" placeholder="Please State">
                                                                         </div>
-                                                                        <div class="col-6 mt-3">
+                                                                        <div class="col-md-6 col-12 mt-3">
                                                                             <h6>Address</h6>
                                                                             <input type="text" placeholder="Same as permenant address">
                                                                         </div>
                                                                         <div class="col-12 mt-5">
                                                                             <h5>Current Address</h5>
                                                                         </div>
-                                                                        <div class="col-6 mt-3">
+                                                                        <div class="col-md-6 col-12 mt-3">
                                                                             <h6>Address</h6>
                                                                             <input type="text" placeholder="Please State">
                                                                         </div>
-                                                                        <div class="col-6 mt-3">
+                                                                        <div class="col-md-6 col-12 mt-3">
                                                                             <h6>Country</h6>
                                                                             <select id="inputState" class="">
                                                                             <option selected disabled>Please Select
@@ -333,11 +354,11 @@
                                                                             <option>...</option>
                                                                         </select>
                                                                         </div>
-                                                                        <div class="col-6 mt-3">
+                                                                        <div class="col-md-6 col-12 mt-3">
                                                                             <h6>State</h6>
                                                                             <input type="text" placeholder="Please State">
                                                                         </div>
-                                                                        <div class="col-6 mt-3">
+                                                                        <div class="col-md-6 col-12 mt-3">
                                                                             <h6>City</h6>
                                                                             <select id="inputState" class="">
                                                                             <option selected disabled>Please Select
@@ -352,28 +373,58 @@
                                                                         <div class="col-12 mt-5">
                                                                             <h5>Emergency Contact</h5>
                                                                         </div>
-                                                                        <div class="col-6 mt-3">
+                                                                        <div class="col-md-6 col-12 mt-3">
                                                                             <h6>Full Name</h6>
-                                                                            <input type="text" placeholder="Full Name">
+                                                                            <input type="text" placeholder="Please state emergency contact full name">
                                                                         </div>
-                                                                        <div class="col-6 mt-3">
+                                                                        <div class="col-md-6 col-12 mt-3">
                                                                             <h6>Contact Number</h6>
-                                                                            <input type="number" placeholder="Please State">
+                                                                            <input type="number" placeholder="Please state emergency contact number">
                                                                         </div>
-                                                                        <div class="col-12 mt-3">
+                                                                        <div class="col-md-6 col-12 mt-3">
+                                                                            <h6>Relationship</h6>
+                                                                            <select id="inputState" class="">
+                                                                                <option selected disabled>Please select relationship
+                                                                                </option>
+                                                                                <option>...</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class=" col-md-6 col-12 mt-3">
                                                                             <h6>Email Address</h6>
                                                                             <input type="email" placeholder="Please State">
                                                                         </div>
-                                                                        <div class="col-12 mt-4 text-center">
-                                                                            <a href="#!" type="button" class="green submit">Submit</a>
+                                                                        <div class="col-12 mt-4 text-center d-flex justify-content-md-end justify-content-center flex-md-row flex-column">
+                                                                            <a href="#!" class="draft-black mr-2" data-target="#exampleModalDraf-1" data-toggle="modal">Save as Draft</a>
+                                                                            <a href="#!" type="button" class="green submit mt-md-0 mt-3">Submit</a>
+                                                                        </div>
+                                                                        <div class="modal fade" id="exampleModalDraf-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                            <div class="modal-dialog" role="document">
+                                                                                <div class="modal-content">
+                                                                                    <img src="./assets/img/tik.png" alt="" width="40px">
+                                                                                    <h4>Your application has been saved</h4>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                                                                    </p>
+                                                                                    <a href="#!" data-dismiss="modal" class="green">Back</a>
+
+                                                                                </div>
+                                                                            </div>
                                                                         </div>
 
                                                                     </div>
                                                                 </form>
                                                             </div>
                                                             <div class="tab-pane fade" id="pills-details" role="tabpanel" aria-labelledby="pills-details-tab">
-                                                                <form action="" id="de-tab-form">
+                                                                <form action="" class="de-tab-form">
                                                                     <div class="row">
+                                                                        <div class="col-12 mt-3">
+                                                                            <h6>Intake</h6>
+                                                                            <select id="inputState" class="dis-bg" disabled>
+                                                                            <option selected disabled>February 2023
+                                                                            </option>
+                                                                            
+                                                                        </select>
+                                                                        </div>
                                                                         <div class="col-12 mt-3">
                                                                             <h6>1st Programme Preference</h6>
                                                                             <select id="inputState" class="">
@@ -406,7 +457,7 @@
                                                                                 <div class="col-12 mt-4">
                                                                                     <h3>Academic Qualification 1</h3>
                                                                                 </div>
-                                                                                <div class="col-6 mt-2">
+                                                                                <div class="col-md-6 col-12 mt-2">
                                                                                     <h6>Academic Qualification Type</h6>
                                                                                     <select id="inputState" class="">
                                                                                     <option selected disabled>Please
@@ -414,7 +465,7 @@
                                                                                     <option>...</option>
                                                                                 </select>
                                                                                 </div>
-                                                                                <div class="col-6 mt-3">
+                                                                                <div class="col-md-6 col-12 mt-3">
                                                                                     <h6>Country of Education</h6>
                                                                                     <select id="inputState" class="">
                                                                                     <option selected disabled>Please
@@ -422,7 +473,7 @@
                                                                                     <option>...</option>
                                                                                 </select>
                                                                                 </div>
-                                                                                <div class="col-6 mt-3">
+                                                                                <div class="col-md-6 col-12 mt-3">
                                                                                     <h6>Academic Transcript</h6>
                                                                                     <div class="position-relative">
                                                                                         <input type="file" required style="color: transparent">
@@ -434,7 +485,7 @@
                                                                                     </div>
 
                                                                                 </div>
-                                                                                <div class="col-6 mt-3">
+                                                                                <div class="col-md-6 col-12 mt-3">
                                                                                     <h6>Academic Transcript</h6>
                                                                                     <div class="position-relative">
                                                                                         <input type="file" required style="color: transparent">
@@ -463,7 +514,7 @@
                                                                         <div class="col-12 mt-5">
                                                                             <h5>English Proficiency</h5>
                                                                         </div>
-                                                                        <div class="col-6 mt-3">
+                                                                        <div class="col-md-6 col-12 mt-3">
                                                                             <h6>English Language Qualification</h6>
                                                                             <select id="inputState" class="">
                                                                             <option selected disabled>Please Select
@@ -471,7 +522,7 @@
                                                                             <option>...</option>
                                                                         </select>
                                                                         </div>
-                                                                        <div class="col-6 mt-3">
+                                                                        <div class="col-md-6 col-12 mt-3">
                                                                             <h6>Score</h6>
                                                                             <input type="number" id="score" name="number" placeholder="Please State">
                                                                         </div>
@@ -489,7 +540,7 @@
                                                                         <div class="col-12 mt-5">
                                                                             <h5>Additional Documents</h5>
                                                                         </div>
-                                                                        <div class="col-6 mt-3">
+                                                                        <div class="col-md-6 col-12 mt-3">
                                                                             <h6>Resume/CV</h6>
                                                                             <div class="position-relative">
                                                                                 <input type="file" id="resume" required style="color: transparent">
@@ -500,7 +551,7 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-6 mt-3">
+                                                                        <div class="col-md-6 col-12 mt-3">
                                                                             <h6>Portfolio</h6>
                                                                             <div class="position-relative">
                                                                                 <input type="file" required style="color: transparent">
@@ -511,11 +562,28 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-12 mt-4 text-center d-flex flex-row" style="justify-content: space-evenly;">
+                                                                        <div class="col-12 mt-5 text-center d-flex flex-md-row flex-column justify-content-md-end justify-content-center">
 
-                                                                            <a href="#!" type="button" class="back">Back</a>
-                                                                            <button type="submit" class="green submit1 pt-0" id="Academic-submit" data-toggle="modal">Submit</button>
+                                                                            <a href="#!" type="button" class="back mr-md-2 mr-0">Back</a>
+                                                                            <a href="#!" class="draft-black mr-md-2 mr-0 mt-md-0 mt-3" data-toggle="modal" data-target="#exampleModalDraf-2"> Save as Draft</a>
+                                                                            <button type="submit" class="green pt-0 ml-0 mr-0 mt-md-0 mt-sm-0 mt-3" id="Academic-submit">Submit</button>
                                                                         </div>
+                                                                        <!-- Save draft modal -->
+                                                                        <!--! Modal -->
+                                                                        <div class="modal fade" id="exampleModalDraf-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                            <div class="modal-dialog" role="document">
+                                                                                <div class="modal-content">
+                                                                                    <img src="./assets/img/tik.png" alt="" width="40px">
+                                                                                    <h4>Your application has been saved</h4>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                                                                    </p>
+                                                                                    <a href="#!" data-dismiss="modal" class="green">Back</a>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!-- Save draft modal end-->
                                                                         <!-- Modal 2 -->
                                                                         <div class="modal fade" id="exampleModalVal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                                             <div class="modal-dialog" role="document">
@@ -565,6 +633,36 @@
 
                                                                     </div>
                                                                 </form>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="pills-elig" role="tabpanel" aria-labelledby="pills-elig-tab">
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <div class="arv">
+                                                                            <img src="./assets/img/clock-gray.svg" width="50px" alt="">
+                                                                            <h4 class="pt-3">Pending eligibility</h4>
+                                                                            <h6>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                                                            </h6>
+                                                                            <div class="mt-3">
+                                                                                <a href="./2.1-Application-1.html" class="green mt-md-0 mt-3">Back</a>
+
+                                                                            </div>
+                                                                            <!--!=== modal ====-->
+                                                                            <div class="modal fade" id="exampleModalDraf-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                                <div class="modal-dialog" role="document">
+                                                                                    <div class="modal-content">
+                                                                                        <img src="./assets/img/tik.png" alt="" width="40px">
+                                                                                        <h4>Your application has been saved</h4>
+                                                                                        <p>
+                                                                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                                                                        </p>
+                                                                                        <a href="#!" data-dismiss="modal" class="green">Back</a>
+
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -886,7 +984,7 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-lg-6">
-                                                                            <div class="sub-box-4">
+                                                                            <div class="sub-box-4 mt-md-0 mt-4">
                                                                                 <div>
                                                                                     <h6>Step 2</h6>
                                                                                     <h5>Offer Letter Confirmation</h5>
@@ -1101,10 +1199,10 @@
                                                                             <h4>Do you need Airport Pick Up?</h4>
                                                                             <h6>For International and East Malaysians students
                                                                             </h6>
-                                                                            <div class="d-flex justify-content-between flex-row mt-3">
+                                                                            <div class="d-flex justify-content-between flex-md-row flex-column mt-3">
                                                                                 <a href="#!" class="white mr-2" data-toggle="modal" data-target="#exampleModal23">I
                                                                                 don't</a>
-                                                                                <a href="#!" class="green" id="do">I
+                                                                                <a href="#!" class="green mt-md-0 mt-3" id="do">I
                                                                                 do</a>
                                                                                 <div class="modal fade" id="exampleModal23" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                                                     <div class="modal-dialog" role="document">
@@ -1212,10 +1310,10 @@
                                                                     <div class="col-12">
                                                                         <div class="arv2">
                                                                             <h4>Do you need on-campus hostel?</h4>
-                                                                            <div class="d-flex justify-content-between flex-row mt-3">
+                                                                            <div class="d-flex justify-content-between flex-md-row flex-column mt-3">
                                                                                 <a href="#!" class="white mr-2" data-toggle="modal" data-target="#exampleModal24">I
                                                                                 don't</a>
-                                                                                <a href="#!" class="green" id="do-2">I
+                                                                                <a href="#!" class="green mt-md-0 mt-3" id="do-2">I
                                                                                 do</a>
                                                                                 <div class="modal fade" id="exampleModal24" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                                                     <div class="modal-dialog" role="document">
@@ -1248,7 +1346,7 @@
                                                                         <div class="accomodation mt-5">
                                                                             <h4>Accommodation List</h4>
                                                                             <div class="row mt-4">
-                                                                                <div class="col-4 mt-3">
+                                                                                <div class="col-lg-4 col-md-6 col-12 mt-3">
                                                                                     <div class="card-2">
                                                                                         <div class="img-height">
                                                                                             <img src="./assets/img/acco.png" width="100%" alt="">
@@ -1265,7 +1363,7 @@
 
                                                                                     </div>
                                                                                 </div>
-                                                                                <div class="col-4 mt-3">
+                                                                                <div class="col-lg-4 col-md-6 col-12 mt-3">
                                                                                     <div class="card-2">
                                                                                         <div class="img-height">
                                                                                             <img src="./assets/img/acco.png" width="100%" alt="">
@@ -1282,7 +1380,7 @@
 
                                                                                     </div>
                                                                                 </div>
-                                                                                <div class="col-4 mt-3">
+                                                                                <div class="col-lg-4 col-md-6 col-12 mt-3">
                                                                                     <div class="card-2">
                                                                                         <div class="img-height">
                                                                                             <img src="./assets/img/acco.png" width="100%" alt="">
@@ -1299,7 +1397,7 @@
 
                                                                                     </div>
                                                                                 </div>
-                                                                                <div class="col-4 mt-3">
+                                                                                <div class="col-lg-4 col-md-6 col-12 mt-3">
                                                                                     <div class="card-2">
                                                                                         <div class="img-height">
                                                                                             <img src="./assets/img/acco.png" width="100%" alt="">
@@ -1330,7 +1428,7 @@
                                                                                     <h4 class="py-3">University Hostel
                                                                                     </h4>
                                                                                 </div>
-                                                                                <div class="col-6">
+                                                                                <div class="col-md-6 col-12">
                                                                                     <div class="img-height" style="background-image: url('./assets/img/bed.png');">
 
                                                                                         <div class="content-2">
@@ -1338,9 +1436,9 @@
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
-                                                                                <div class="col-6">
+                                                                                <div class="col-md-6 col-12 mt-3">
                                                                                     <div class="row">
-                                                                                        <div class="col-6">
+                                                                                        <div class="col-md-6 col-12 mt-3">
                                                                                             <div class="img-height-2" style="background-image: url('./assets/img/hotel.png');">
 
                                                                                                 <div class="content-2">
@@ -1348,7 +1446,7 @@
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
-                                                                                        <div class="col-6">
+                                                                                        <div class="col-md-6 col-12 mt-3">
                                                                                             <div class="img-height-2" style="background-image: url('./assets/img/hotel.png');">
 
                                                                                                 <div class="content-2">
@@ -1356,7 +1454,7 @@
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
-                                                                                        <div class="col-6">
+                                                                                        <div class="col-md-6 col-12 mt-3">
                                                                                             <div class="img-height-2" style="background-image: url('./assets/img/hotel.png');">
 
                                                                                                 <div class="content-2">
@@ -1364,7 +1462,7 @@
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
-                                                                                        <div class="col-6">
+                                                                                        <div class="col-md-6 col-12 mt-3">
                                                                                             <div class="img-height-2" style="background-image: url('./assets/img/hotel.png');">
 
                                                                                                 <div class="content-2">
@@ -1382,7 +1480,7 @@
                                                                                 </div>
                                                                                 <div class="col-12">
                                                                                     <div class="d-box">
-                                                                                        <div class="d-flex flex-row justify-content-between">
+                                                                                        <div class="d-flex flex-md-row flex-column justify-content-between">
                                                                                             <div>
                                                                                                 <h6>Block A(Type A)</h6>
                                                                                                 <h6 class="gray-t">
@@ -1428,7 +1526,7 @@
                                                                                             </li>
                                                                                         </ul>
                                                                                         <div class="divider"></div>
-                                                                                        <div class="d-flex justify-content-between flex-row">
+                                                                                        <div class="d-flex justify-content-between flex-md-row flex-column">
                                                                                             <ul class="ser-icon">
                                                                                                 <li>
                                                                                                     <i class="fas fa-wifi"></i>
@@ -1623,19 +1721,19 @@
                                                                                     <div class="d-box-2">
                                                                                         <h5>Booking Summary</h5>
                                                                                         <div class="row mt-3">
-                                                                                            <div class="col-4">
+                                                                                            <div class="col-md-4 col-12">
                                                                                                 <span>Hostel
                                                                                                 Location</span>
                                                                                                 <h6>University Hostel
                                                                                                 </h6>
                                                                                             </div>
-                                                                                            <div class="col-4">
+                                                                                            <div class="col-md-4 col-12 mt-3">
                                                                                                 <span>Duration of
                                                                                                 stay</span>
                                                                                                 <h6>6 months (1 semester)
                                                                                                 </h6>
                                                                                             </div>
-                                                                                            <div class="col-4 text-right">
+                                                                                            <div class="col-md-4 col-12 mt-3 text-right">
                                                                                                 <span>Deposit for 2
                                                                                                 months
                                                                                                 (Refundable)</span>
@@ -1643,38 +1741,38 @@
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="row mt-5">
-                                                                                            <div class="col-4">
+                                                                                            <div class="col-md-4 col-12">
                                                                                                 <span>Hostel
                                                                                                 Location</span>
                                                                                                 <h6>Type A - Single Room with attached bathroom
                                                                                                 </h6>
                                                                                             </div>
-                                                                                            <div class="col-4">
+                                                                                            <div class="col-md-4 col-12 mt-3">
                                                                                                 <span>Duration of
                                                                                                 stay</span>
                                                                                                 <h6>Type A - A-06-01
                                                                                                 </h6>
                                                                                             </div>
-                                                                                            <div class="col-4 text-right">
+                                                                                            <div class="col-md-4 col-12 mt-3 text-right">
                                                                                                 <span>Advance Rental
                                                                                                 (Non-refundable)</span>
                                                                                                 <h4>RM 2,300.00</h4>
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="row mt-5">
-                                                                                            <div class="col-4">
+                                                                                            <div class="col-md-4 col-12">
                                                                                                 <span>Hostel
                                                                                                 Location</span>
                                                                                                 <h6 class="date-d">-
                                                                                                 </h6>
                                                                                             </div>
-                                                                                            <div class="col-4">
+                                                                                            <div class="col-md-4 col-12 mt-3">
                                                                                                 <span>Duration of
                                                                                                 stay</span>
                                                                                                 <h6 class="time-t">-
                                                                                                 </h6>
                                                                                             </div>
-                                                                                            <div class="col-4 text-right">
+                                                                                            <div class="col-md-4 col-12 mt-3 text-right">
                                                                                                 <span>Advance Rental
                                                                                                 (Non-refundable)</span>
                                                                                                 <h4 class="green-t">RM 2,300.00
@@ -1686,11 +1784,11 @@
                                                                                 </div>
                                                                                 <form action="">
                                                                                     <div class="row">
-                                                                                        <div class="col-6">
+                                                                                        <div class="col-md-6 col-12">
                                                                                             <h6>Check-in Date</h6>
                                                                                             <input placeholder="Please Select Date" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date-d">
                                                                                         </div>
-                                                                                        <div class="col-6">
+                                                                                        <div class="col-md-6 col-12 mt-3">
                                                                                             <h6>Check-in Time</h6>
                                                                                             <select id="time-t" class="">
                                                                                             <option disabled="">
@@ -1709,7 +1807,7 @@
                                                                                                 Occupancy</a>.</h6>
                                                                                         </div>
                                                                                         <div class="col-12">
-                                                                                            <div class="d-flex justify-content-space-around flex-row mt-4">
+                                                                                            <div class="d-flex justify-content-space-around flex-md-row flex-column mt-4">
                                                                                                 <a href="#!" class="white">Cancel</a>
                                                                                                 <a href="#!" class="green" data-target="#exampleModal225" data-toggle="modal">Proceed
                                                                                                 To Payment</a>
@@ -2666,12 +2764,14 @@
         <sup class="suptop">3</sup>
     </a>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+<script src="./assets/Jquery/3.1.1-jquery.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js" integrity="sha512-+gShyB8GWoOiXNwOlBaYXdLTiZt10Iy6xjACGadpqMs20aJOoh+PJt3bwUVA6Cefe7yF7vblX6QwyXZiVwTWGg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput-jquery.js" integrity="sha512-/acYLNZxNREFFLiu9TPezQUnMP/n9JTKYJJ/nC5JbW1Cpw8wT2hfV0+StgBnut/dCFxYHitlYdQjKRfkNMj+og==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./assets/Jquery/popper.min.js"></script>
+<script src="./assets/bootstrap/bootstrap.min.js"></script>
 <!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="./assets/swiper/swiper-bundle.min.js"></script>
 
 
 
@@ -2679,6 +2779,9 @@
 <!-- Initialize Swiper -->
 <script>
     $(document).ready(function() {
+        $('#toggleSide a').click(function() {
+            $('.left-side').toggle('slow');
+        })
         $('.campuses li').click(function() {
             $('.campuses li').removeClass('active');
             $(this).addClass('active');
@@ -2722,53 +2825,64 @@
         $(this).closest('.sub-box').find('.rotate').toggleClass('down-angle')
 
     });
-    $('.bgchange').click(function() {
-        $(this).closest('.box-3').find('.sub-box').css({
+    $('.box-3 .bgchange').click(function() {
+        $('.box-3 .sub-box').addClass('bg990');
+    });
+    $(document).on("click", ".bg990", function() {
+        // $(this).css('backgroundColor', 'black');
+        $(this).addClass('bgGreen');
+        $(this).css({
             'backgroundColor': 'white',
             'border': '2px solid #BEBEBE'
         });
-        $(this).closest('.box-3').find('.sub-box a').css('color', 'black');
-        $(this).closest('.box-3').find('.gray').css('display', 'block');
-        $(this).closest('.box-3').find('.gray').css('pointer-events', 'none');
-        $(this).closest('.box-3').find('.sub-box .img-1').css('display', 'none');
-        $(this).closest('.box-3').find('.sub-box .img-2').css('display', 'block');
-        $(this).closest('.box-3').find('.sub-box .black-col').css('display', 'none');
-        $(this).closest('.box-3').find('.sub-box .green-col').css('display', 'block');
+        $(this).parent().find('.sub-box a').css('color', 'black');
+        $('.box-3').parent().find('.gray').css('display', 'block');
+        $(this).parent().find('.gray').css('pointer-events', 'none');
+        $(this).parent().find('.sub-box .img-1').css('display', 'none');
+        $(this).parent().find('.sub-box .img-2').css('display', 'block');
+        $(this).parent().find('.sub-box .black-col').css('display', 'none');
+        $(this).parent().find('.sub-box .green-col').css('display', 'block');
         $('.bgchange').css('display', 'none');
-        $(this).closest('.box-3').find('.sub-box h6').css('color', '#BEBEBE');
-        $(this).closest('.box-3').find('.sub-box .lists li').css({
+        $(this).parent().find('.sub-box h6').css('color', '#BEBEBE');
+        $(this).parent().find('.sub-box .lists li').css({
             'color': '#7c7c7c',
             'border-bottom': '1px solid #BEBEBE'
         });
-
-
     });
-    $('.bgChange2').click(function() {
-        $(this).closest('.box-3').find('.sub-box a').css('color', '#fff');
-        $(this).closest('.box-3').find('.sub-box').css({
+    $(document).on("click", ".bgGreen", function() {
+        $(this).removeClass('bg990');
+
+        $(this).css('color', '#fff');
+        $(this).css({
             'backgroundColor': '#02A574',
             'border': 'none'
         });
-        $(this).closest('.box-3').find('.sub-box .img-2').css('display', 'none');
-        $(this).closest('.box-3').find('.sub-box .img-3').css('display', 'block');
-        $(this).closest('.box-3').find('.sub-box h6').css({
+        $(this).parent().find('.sub-box .img-2').css('display', 'none');
+        $(this).parent().find('.sub-box .img-3').css('display', 'block');
+        $(this).parent().find('.sub-box h6').css({
             'color': '#fff',
             'opacity': '0.7'
         });
-        $(this).closest('.box-3').find('.sub-box .first-h5').css('display', 'none');
-        $(this).closest('.box-3').find('.sub-box .second-h5').css('display', 'block');
-        $(this).closest('.box-3').find('.sub-box .green-col').css('color', '#fff');
-        $(this).closest('.box-3').find('.sub-box h4').css({
+        $(this).parent().find('.sub-box .first-h5').css('display', 'none');
+        $(this).parent().find('.sub-box .second-h5').css('display', 'block');
+        $(this).parent().find('.sub-box .green-col').css('color', '#fff');
+        $(this).parent().find('.sub-box h4').css({
             'color': '#fff',
             'opacity': '0.7'
         });
-        $(this).closest('.box-3').find('.gray').css({
+        $('.box-3').find('.gray').css({
             'backgroundColor': '#02A574',
             'color': '#fff',
 
         });
-        $(this).closest('.box-3').find('.gray').css('pointer-events', 'auto');
+        $('.box-3').parent().find('.gray').css('pointer-events', 'auto');
+        $(this).parent().find('.sub-box .lists li').css({
+            'color': '#fff',
+            'border-bottom': '1px solid #BEBEBE'
+        });
+        $(this).parent().find('.toggleClick').css('color', '#fff');
     });
+
     // stage 3
     var swiper = new Swiper(".mySwiper", {
         navigation: {
@@ -2926,9 +3040,11 @@
         $('.arv').css('display', 'none');
         $('.box-5 form').css('display', 'block');
     });
+    $('.imp2').change((e) => {
+        var filename = e.target.files[0].name;
+        $('.box-5 .form-1 h6').text('File Selected' + ' ' + filename);
+    })
     $('.imp2').click(() => {
-        var filename = $('.imp2').val();
-        $('.box-5 .form-1 h6').text('File Selected' + filename);
         $('.border-b').css('display', 'block');
         $('.border-b').css('color', '#7c7c7c');
         $('.check-t input').trigger('click');
@@ -3157,26 +3273,65 @@
         //!======================== Academic Tabs From Validation
 
 
-    var reg = $('#de-tab-form');
-    if (reg.length) {
-        reg.validate({
-            rules: {
-                number: {
-                    required: true
-                }
-            }
-        })
-    };
+
     $(document).ready(function() {
         $('#Academic-submit').click(function() {
-            $('#de-tab-form input').val() !== '' ? $('#exampleModalVal2').modal({
+
+            $('.de-tab-form input').val() === '' ? $('#exampleModalVal').modal({
                 show: true
-            }) : $('#exampleModalVal').modal({
+            }) : $('#exampleModalVal2').modal({
                 show: true
             });
         })
-    })
+        $('.de-tab-form input[type="file"]').change(function(e) {
+            // var values = $(this).val();
+            var values = e.target.files[0].name;
+            $(this).parent().find('.file-field h6').text(values);
+            $(this).parent().find('.file-field h6').html(values);
+        });
+        $('#pills-personal form input[type="file"]').change(function(e) {
+            // var values = $(this).val();
+            var values = e.target.files[0].name;
+            $(this).parent().find('.file-field h6').text(values);
+            $(this).parent().find('.file-field h6').html(values);
+        });
+        // For All input field 
+        $('.file-field').click(function() {
+            $(this).parent().find('input[type=file]').trigger('click');
+        });
+        $('.back').click(function() {
+            $('#pills-personal-tab').trigger('click');
+        })
+        $('.back').click(function() {
+            $('#pills-personal-tab').trigger('click');
+        })
 
+    });
+    var input = document.querySelector(".phone");
+    window.intlTelInput(input, {
+        separateDialCode: true,
+        customPlaceholder: function(
+            selectedCountryPlaceholder,
+            selectedCountryData
+        ) {
+            return "e.g. " + selectedCountryPlaceholder;
+        },
+    });
+
+    var iti = window.intlTelInputGlobals.getInstance(input);
+
+    input.addEventListener('input', function() {
+        var countryName = iti.getSelectedCountryData().name;
+        document.getElementById('country').value = countryName;
+    });
+
+
+    $('a[data-toggle="tooltip"]').tooltip({
+        animated: 'fade',
+        placement: 'bottom',
+        html: true,
+        trigger: 'click'
+    });
 
 
 
@@ -3194,8 +3349,8 @@
             $("#pills-stage-3-tab").trigger("click");
         })
         // On tabs Click Content refresh
-    $("#pills-tab").tabs("option", "active", 0);
-    $("#pills-tab").tabs("option", "active", 1);
+        // $("#pills-tab").tabs("option", "active", 0);
+        // $("#pills-tab").tabs("option", "active", 1);
 </script>
 
 </html>

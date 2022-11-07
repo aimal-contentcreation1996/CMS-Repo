@@ -105,6 +105,9 @@
     .main .right-side .box-5 .arv {
         padding: 100px 0;
     }
+    .main #pills-elig .arv {
+        padding: 100px 0;
+    }
     .main .right-side .box-5 .arv2 {
         padding: 100px 0;
     }
@@ -253,6 +256,9 @@
     #toggleSide {
         top: 0;
         background-color: #f8f8f8;
+    }
+    .main .right-side .box-2 .cl-tabs form .draft-black {
+        width: 100%;
     }
 }
 

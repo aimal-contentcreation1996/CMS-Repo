@@ -661,12 +661,22 @@ body {
                         color: $white;
                         text-align: center;
                         text-decoration: none;
-                        width: 30%;
+                        width: 20%;
                         height: 40px;
                         border-radius: 6px;
                         padding-top: 8px;
                         display: block;
-                        margin: 0 auto;
+                    }
+                    .draft-black {
+                        background-color: $black;
+                        color: $white;
+                        text-align: center;
+                        text-decoration: none;
+                        width: 20%;
+                        height: 40px;
+                        border-radius: 6px;
+                        padding-top: 8px;
+                        display: block;
                     }
                 }
                 .sub-box-2 {
@@ -685,7 +695,7 @@ body {
                     color: $black-1;
                     text-align: center;
                     text-decoration: none;
-                    width: 30%;
+                    width: 22%;
                     height: 40px;
                     border-radius: 6px;
                     padding-top: 8px;
@@ -2288,6 +2298,44 @@ body {
                 padding-top: 8px;
                 background-color: $green;
                 color: $white;
+            }
+        }
+    }
+    #pills-elig {
+        .arv {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+            text-align: center;
+            align-items: center;
+            padding: 100px;
+            h6 {
+                color: $gray;
+                font-weight: 400;
+                padding-top: 5px;
+            }
+            .white {
+                display: block;
+                width: 300px;
+                height: 40px;
+                border: 1.5px solid $gray;
+                text-align: center;
+                text-decoration: none;
+                padding-top: 8px;
+                border-radius: 6px;
+                color: $black-1;
+            }
+            .green {
+                display: block;
+                width: 300px;
+                height: 40px;
+                border-radius: 6px;
+                text-align: center;
+                text-decoration: none;
+                padding-top: 8px;
+                color: $white;
+                background-color: $green;
             }
         }
     }

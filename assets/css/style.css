@@ -643,12 +643,22 @@ body {
   color: #fff;
   text-align: center;
   text-decoration: none;
-  width: 30%;
+  width: 20%;
   height: 40px;
   border-radius: 6px;
   padding-top: 8px;
   display: block;
-  margin: 0 auto;
+}
+.main .right-side .box-2 .cl-tabs form .draft-black {
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  width: 20%;
+  height: 40px;
+  border-radius: 6px;
+  padding-top: 8px;
+  display: block;
 }
 .main .right-side .box-2 .cl-tabs .sub-box-2 {
   width: 100%;
@@ -666,7 +676,7 @@ body {
   color: #171717;
   text-align: center;
   text-decoration: none;
-  width: 30%;
+  width: 22%;
   height: 40px;
   border-radius: 6px;
   padding-top: 8px;
@@ -2244,6 +2254,42 @@ body {
   padding-top: 8px;
   background-color: #02a574;
   color: #fff;
+}
+.main #pills-elig .arv {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  padding: 100px;
+}
+.main #pills-elig .arv h6 {
+  color: #bebebe;
+  font-weight: 400;
+  padding-top: 5px;
+}
+.main #pills-elig .arv .white {
+  display: block;
+  width: 300px;
+  height: 40px;
+  border: 1.5px solid #bebebe;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 8px;
+  border-radius: 6px;
+  color: #171717;
+}
+.main #pills-elig .arv .green {
+  display: block;
+  width: 300px;
+  height: 40px;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 8px;
+  color: #fff;
+  background-color: #02a574;
 }
 
 .sect-scnd-hero {

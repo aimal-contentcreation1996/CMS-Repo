@@ -593,3 +593,63 @@
     display: inline-block;
     margin: 0 auto;
 }
+
+#exampleModalDraf-2 .modal-dialog {
+    background-color: white !important;
+    width: 500px;
+    color: #171717;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 50px 50px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 20px rgb(0 0 0 / 5%);
+}
+
+#exampleModalDraf-2 .modal-dialog a {
+    background-color: #02A574;
+    color: white;
+    border: none;
+    outline: none;
+    height: 35px;
+    border-radius: 6px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 6px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#exampleModalDraf-1 .modal-dialog {
+    background-color: white !important;
+    width: 500px;
+    color: #171717;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 50px 50px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 20px rgb(0 0 0 / 5%);
+}
+
+#exampleModalDraf-1 .modal-dialog a {
+    background-color: #02A574;
+    color: white;
+    border: none;
+    outline: none;
+    height: 35px;
+    border-radius: 6px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 6px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 auto;
+}
