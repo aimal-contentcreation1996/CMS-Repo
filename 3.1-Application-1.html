@@ -37,8 +37,25 @@
                         <a href="#!"><i class="fas fa-bars"></i></a>
                     </div>
                     <div class="left-side">
-                        <div class="logo-sec d-lg-block d-md-block d-sm-block d-none">
+                        <div class="logo-sec d-lg-block d-md-block d-sm-block d-none" data-toggle="modal" data-target="#exampleModalLogo">
                             <img src="./assets/img/logo.svg" width="200px" alt="">
+                        </div>
+                        <div class="modal fade" id="exampleModalLogo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <img src="./assets/img/tik.png" alt="" width="40px">
+                                    <h4>Continue later</h4>
+                                    <p>
+                                        You may save your application and proceed to continue later
+                                    </p>
+                                    <div class="d-flex justify-content-around flex-row">
+                                        <a href="./2.1-Application-1.html" class="white">Leave without saving</a>
+                                        <a href="./2.1-Application-1.html" class="green">Save draft</a>
+                                    </div>
+
+
+                                </div>
+                            </div>
                         </div>
                         <div class="dropbox" style="background-image: url('./assets/img/3.1-1.png');">
                             <h6 class="text-center">Select Campus</h6>
@@ -226,7 +243,7 @@
                                                                 <form action="">
                                                                     <div class="row">
                                                                         <div class="col-md-6 col-12 mt-3">
-                                                                            <h6>Full Name</h6>
+                                                                            <h6>Full Name <sup class="asterik">*</sup></h6>
                                                                             <input type="text" placeholder="Full Name">
                                                                         </div>
                                                                         <div class="col-md-6 col-12 mt-3">
