@@ -189,6 +189,12 @@
         top: 0;
         background-color: #f8f8f8;
     }
+    .main .right-side .box-2 .cl-tabs .nav-link {
+        text-align: left;
+    }
+    .main .right-side .box-2 .cl-tabs .bg-bold {
+        text-align: center;
+    }
 }
 
 
